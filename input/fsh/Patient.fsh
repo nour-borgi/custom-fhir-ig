@@ -16,7 +16,7 @@ Description: "Example of Patient"
 
 * gender = #male
 
-* birthDate = "1960-02-02"
+* birthDate = "2022-07-07"
 
 * address.line = "123 Main St"
 * address.city = "Anytown"
