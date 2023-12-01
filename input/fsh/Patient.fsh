@@ -22,6 +22,3 @@ Description: "Example of Patient"
 * address.city = "Anytown"
 * address.postalCode = "12345"
 * address.country = "US"
-
-* communication.language = urn:ietf:bcp:47#en-US "English (Region=United States)"
-* communication.language.text = "English"
