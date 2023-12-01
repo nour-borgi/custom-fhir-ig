@@ -17,6 +17,9 @@ on:
 
   workflow_dispatch:
 
+permissions:
+      contents: read
+      
 jobs:
   # This workflow contains a single job called "build"
   call_build: 
