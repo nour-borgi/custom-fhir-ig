@@ -7,10 +7,10 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: my-ig
-canonical: http://example.com/fhir/example
-url: http://example.com/fhir/example
-name: ExampleIG
+id: custom-fhir-ig
+canonical: https://github.com/nour-borgi/custom-fhir-ig
+url: https://github.com/nour-borgi/custom-fhir-ig/ImplementationGuide/custom-fhir-ig
+name: CustomFHIRIG
 title: "HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1"
 description: Example IG exercises many of the fields in a SUSHI configuration.
 status: active
@@ -37,16 +37,16 @@ releaseLabel: STU1
 # as IG.publisher.  The contact details and/or additional publishers
 # will be translated into IG.contact values.
 publisher:
-  name: My Organization 
-  url: http://example.com/committees
-  email: my-group@example.com
+  name: Jembi Health Systems
+  url: https://www.jembi.org
+  email: info.jembi.org
 
 # ContactDetail is required by the template.
 contact:
-  - name: Bob Smith
+  - name: Nour Borgi
     telecom:
       - system: email
-        value: bobsmith@example.com
+        value: nour@symbionix.co
         use: work
 
 # The jurisdiction can be a single item or a list. The FHIR Shorthand
