@@ -65,4 +65,3 @@ Description: "This is an extension of the Client Key Population Extension"
 * valueCodeableConcept from ClientKeyPopulationValues (required)
 * ^context[0].type = #element
 * ^context[0].expression = "Patient"
-
