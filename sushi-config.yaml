@@ -7,15 +7,15 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: custom-fhir-ig
-canonical: https://github.com/nour-borgi/custom-fhir-ig
-url: https://github.com/nour-borgi/custom-fhir-ig/ImplementationGuide/custom-fhir-ig
+id: openhie.fhir.custom-fhir-ig-nour
+canonical: http://openhie.org/fhir/custom-fhir-ig
+url: http://openhie.org/fhir/custom-fhir-ig/ImplementationGuide/openhie.fhir.custom-fhir-ig-nour
 name: CustomFHIRIG
 title: "HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1"
 description: Example IG exercises many of the fields in a SUSHI configuration.
 status: active
 license: CC0-1.0
-date: 2020-02-26
+date: 2023-12-01
 version: 1.0.0
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
