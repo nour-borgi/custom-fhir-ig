@@ -7,9 +7,9 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: openhie.fhir.custom-fhir-ig-nour
+id: openhie.fhir.custom.ig.nour
 canonical: http://openhie.org/fhir/custom-fhir-ig
-url: http://openhie.org/fhir/custom-fhir-ig/ImplementationGuide/openhie.fhir.custom-fhir-ig-nour
+url: http://openhie.org/fhir/custom-fhir-ig/ImplementationGuide/openhie.fhir.custom.ig.nour
 name: CustomFHIRIG
 title: "HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1"
 description: Example IG exercises many of the fields in a SUSHI configuration.
