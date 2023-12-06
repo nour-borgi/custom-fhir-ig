@@ -35,7 +35,7 @@ Description: "Example for Organization of Ethiopia FHIR IG"
 * address.city = "Kirkos"
 * address.state = "Addis Ababa"
 * address.district = "Kirkos woreda 9"
-* identifier[MOHID].value = "141060024"
+* identifier[MOHID].value = "MOHID001"
 * identifier[MOHID].system = $MOHID
-* identifier[HFUID].value = "BdnbJE1lajt"
+* identifier[HFUID].value = "HFUID001"
 * identifier[HFUID].system = $HFUID
