@@ -30,9 +30,8 @@ Description: "Example of Patient"
 * maritalStatus.coding.display = "Married"
 * maritalStatus.text = "A current marriage contract is active"
 * managingOrganization = Reference(OrganizationExample)
-* extension[KPS].valueCodeableConcept.coding.code = #417284009
+* extension[KPS].valueCodeableConcept = $SCT#417284009
 * extension[KPS].valueCodeableConcept.coding.display = "Current drug user"
-* extension[KPS].valueCodeableConcept.coding.system = $SCT
 * extension[KPS].valueCodeableConcept.text = "Current drug user"
 
 Instance: OrganizationExample
