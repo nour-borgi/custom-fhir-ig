@@ -65,3 +65,52 @@ Description: "This is an extension of the Client Key Population Extension"
 * valueCodeableConcept from ClientKeyPopulationValues (required)
 * ^context[0].type = #element
 * ^context[0].expression = "Patient"
+
+Profile: EthEncounterProfile
+Parent: Encounter
+Id: eth-encounter
+Title: "Ethiopia Encounter Profile"
+Description: "Encounter Profile to record one follow up for the Ethiopia FHIR IG"
+* class 1..1
+* status 1..1
+* identifier 1..*
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier ^slicing.description = "Slicing the Encounter identifiers based on the system value"
+* identifier ^slicing.ordered = false
+* identifier contains
+    FOLLOWUP 1..1
+* identifier[FOLLOWUP].value 1..1
+* identifier[FOLLOWUP].system = $ENCOUNTER (exactly)
+* subject 1..1 
+* subject only Reference(Patient)
+* type 1..1
+* type = $SCT#390906007
+* period 1..1
+* period.start 1..1
+* period.end 0..1
+* extension contains EncounterNextVisitExtension named NV 0..1 MS
+* extension[NV] ^definition = "Next encounter visit date"
+* extension contains EncounterVisitTypeExtension named VT 0..1 MS
+* extension[VT] ^definition = "Encounter visit type"
+
+Extension: EncounterNextVisitExtension
+Id: encounter-next-visit
+Title: "Encounter Next Visit Extension"
+Description: "This is an extension of the Encounter next visit date"
+* ^url = $NEXT_VISIT 
+* value[x] only dateTime
+* valueDateTime 1..1
+* ^context[0].type = #element
+* ^context[0].expression = "Encounter"
+    
+Extension: EncounterVisitTypeExtension
+Id: encounter-visit-type
+Title: "Encounter Visit Type Extension"
+Description: "This is an extension of the Encounter visit type"
+* ^url = $VISIT_TYPE
+* value[x] only string
+* valueString 1..1
+* ^context[0].type = #element
+* ^context[0].expression = "Encounter"

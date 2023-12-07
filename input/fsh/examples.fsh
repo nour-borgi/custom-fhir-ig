@@ -58,3 +58,25 @@ Description: "Example for Bundle"
 * entry[=].request.url = "Patient/PatientExample"
 * entry[=].request.method = #PUT
 * entry[=].resource = PatientExample
+
+Instance: EthEncounterExample
+InstanceOf: EthEncounterProfile
+Usage: #example
+Description: "Example for Encounter of Ethiopia FHIR IG"
+* class.code = #OBSENC
+* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+* class.display = "observation encounter"
+* status = #finished
+* identifier[FOLLOWUP].value = "001"
+* identifier[FOLLOWUP].system = $ENCOUNTER
+* subject = Reference(PatientExample)
+* type.text = "Follow-up encounter"
+* type.coding.display = "Follow-up encounter"
+* type.coding.code = #390906007
+* type.coding.system = $SCT
+* period.start = "2012-12-09"
+* period.end = "2012-12-09"
+* extension[NV].valueDateTime = "2013-01-15"
+* extension[NV].url = $NEXT_VISIT
+* extension[VT].valueString = "Unscheduled"
+* extension[VT].url = $VISIT_TYPE
