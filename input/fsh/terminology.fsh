@@ -17,7 +17,7 @@ Description: "Client Key Population Value Set"
 * $SCT#228388006 "Intravenous drug user"
 * $SCT#417284009 "Current drug user"
 * $SCT#407375002 "Surgically transgendered transsexual"
-* $client-key-population-code-system#General-Population "General Population"
+* codes from system client-key-population-code-system
 
 CodeSystem: FollowUpStatusCodeSystem
 Id: followup-status-code-system
