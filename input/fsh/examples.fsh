@@ -62,7 +62,7 @@ Description: "Example for Bundle"
 Instance: EthEncounterExample
 InstanceOf: EthEncounterProfile
 Usage: #example
-Description: "Example for Encounter of Ethiopia FHIR IG"
+Description: "Example for Encounter of FHIR IG"
 * class.code = #OBSENC
 * class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
 * class.display = "observation encounter"
@@ -80,3 +80,27 @@ Description: "Example for Encounter of Ethiopia FHIR IG"
 * extension[NV].url = $NEXT_VISIT
 * extension[VT].valueString = "Unscheduled"
 * extension[VT].url = $VISIT_TYPE
+
+Instance: EthMedicationDispenseExample
+InstanceOf: EthMedicationDispense
+Usage: #example
+Description: "Example for Medication Dispense of FHIR IG"
+* status = #completed
+* statusReasonCodeableConcept.text = "Alive On ART"
+* statusReasonCodeableConcept.coding.code = #alive-on-art
+* statusReasonCodeableConcept.coding.system = $FOLLOWUP_STATUS
+* medicationCodeableConcept.text = "1j (TDF+3TC+DTG)"
+* medicationCodeableConcept.coding.code = #1j
+* medicationCodeableConcept.coding.display = "TDF + 3TC + DTG"
+* medicationCodeableConcept.coding.system = $REGIMEN_CODES
+* subject = Reference(EthPatientExample)
+* context = Reference(EthEncounterExample)
+* quantity.code = #Tablet
+* quantity.unit = "Tablet"
+* quantity.value = 90
+* quantity.system = $UNIT
+* daysSupply.code = #days
+* daysSupply.unit = "days"
+* daysSupply.value = 90
+* daysSupply.system = $UNIT
+* extension[DED].valueDateTime = "2024-04-03"

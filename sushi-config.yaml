@@ -176,6 +176,13 @@ jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 #parameters:
 #  excludettl: true
 #  validation: [allow-any-extensions, no-broken-links]
+parameters:
+  special-url:
+    - http://cdr.com/next-visit
+    - http://cdr.com/visit-type
+    - http://cdr.com/dose-end-date
+    - http://cdr.com/medication-dispense/status-reason
+    - http://cdr.com/hiv-regimen-codes
 
 # The FSHOnly flag indicates if only FSH resources should be exported.
 # If set to true, no IG related content will be generated.

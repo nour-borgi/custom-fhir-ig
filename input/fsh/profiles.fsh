@@ -69,8 +69,8 @@ Description: "This is an extension of the Client Key Population Extension"
 Profile: EthEncounterProfile
 Parent: Encounter
 Id: eth-encounter
-Title: "Ethiopia Encounter Profile"
-Description: "Encounter Profile to record one follow up for the Ethiopia FHIR IG"
+Title: "Encounter Profile"
+Description: "Encounter Profile to record one follow up for the FHIR IG"
 * class 1..1
 * status 1..1
 * identifier 1..*
@@ -114,3 +114,50 @@ Description: "This is an extension of the Encounter visit type"
 * valueString 1..1
 * ^context[0].type = #element
 * ^context[0].expression = "Encounter"
+
+Profile: EthMedicationDispense
+Parent: MedicationDispense
+Id: eth-medication-dispense
+Title: "Medication Dispense Profile"
+Description: "Medication Dispense Profile to record follow up status and arv drugs for the FHIR IG"
+* status 1..1
+* medication[x] only CodeableConcept
+* statusReasonCodeableConcept 0..1 MS
+* statusReasonCodeableConcept ^definition = "reason(s) why this should be supported."
+* statusReasonCodeableConcept.coding.code 1..1
+* statusReasonCodeableConcept.coding.code from FollowUpStatusValueSet (extensible)
+* statusReasonCodeableConcept.coding.system 1..1
+* medication[x] only CodeableConcept
+* medicationCodeableConcept 1..1 MS
+* medicationCodeableConcept ^definition = "reason(s) why this should be supported."
+* medicationCodeableConcept.coding.code 1..1 
+* medicationCodeableConcept.coding.code from DispenseCodesValueSet (extensible)
+* medicationCodeableConcept.coding.system 1..1
+* subject 1..1 
+* subject only Reference(Patient)
+* context 1..1 
+* context only Reference(Encounter)
+* quantity 0..1 MS
+* quantity ^definition = "reason(s) why this should be supported."
+* quantity.value 1..1
+* quantity.system 1..1
+* daysSupply.system = $UNIT
+* quantity.code 1..1
+* daysSupply 0..1 MS
+* daysSupply ^definition = "reason(s) why this should be supported."
+* daysSupply.value 1..1
+* daysSupply.system 1..1
+* daysSupply.system = $UNIT
+* daysSupply.code 1..1
+* extension contains MedicationDispenseDoseEndDateExtension named DED 0..1 MS
+* extension[DED] ^definition = "reason(s) why this should be supported."
+
+Extension: MedicationDispenseDoseEndDateExtension
+Id: arv-dose-end-date
+Title: "Medication Dispense Dose End Date Extension"
+Description: "This is an extension of the medication dispense to capture the dose end date of the arv drugs"
+* ^url = $DOSE_END_DATE
+* value[x] only dateTime
+* valueDateTime 1..1
+* ^context[0].type = #element
+* ^context[0].expression = "MedicationDispense"
