@@ -2,7 +2,7 @@ Profile: EthOrganizationProfile
 Parent: Organization
 Id: eth-organization
 Title: "EthOrganizationProfile"
-Description: "Organization Profile of Ethiopia FHIR IG"
+Description: "Organization Profile of FHIR IG"
 * active 1..1
 * name 1..1
 * type 0..*
@@ -28,7 +28,7 @@ Description: "Organization Profile of Ethiopia FHIR IG"
 
 Instance: EthOrganizationExample
 InstanceOf: EthOrganizationProfile
-Description: "Example for Organization of Ethiopia FHIR IG"
+Description: "Example for Organization of FHIR IG"
 * active = true
 * name = "Meshwalkiya Health Center"
 * address.line[0] = "Meshulekia"
