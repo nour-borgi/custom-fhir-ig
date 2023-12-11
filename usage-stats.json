@@ -1,0 +1,118 @@
+{
+  "package": "openhie.fhir.custom.ig.nour",
+  "version": "1.0.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "001",
+  "extensions": [
+    {
+      "url": "http://cdr.com/dose-end-date",
+      "title": "Medication Dispense Dose End Date Extension",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://cdr.com/next-visit",
+      "title": "Encounter Next Visit Extension",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://cdr.com/visit-type",
+      "title": "Encounter Visit Type Extension",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/client-key-population-extension",
+      "title": "ClientKeyPopulationExtension",
+      "types": [
+        "CodeableConcept"
+      ]
+    }
+  ],
+  "profiles": {
+    "Encounter": [
+      {
+        "url": "http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/eth-encounter",
+        "title": "Encounter Profile"
+      }
+    ],
+    "MedicationDispense": [
+      {
+        "url": "http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/eth-medication-dispense",
+        "title": "Medication Dispense Profile"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/eth-organization",
+        "title": "EthOrganizationProfile"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/eth-patient",
+        "title": "Eth Patient"
+      },
+      {
+        "url": "http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/hiv-patient",
+        "title": "hiv-patient"
+      }
+    ]
+  },
+  "usage": {
+    "http://cdr.com/dose-end-date": [
+      "MedicationDispense"
+    ],
+    "http://cdr.com/next-visit": [
+      "Encounter"
+    ],
+    "http://cdr.com/visit-type": [
+      "Encounter"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/client-key-population-extension": [
+      "Bundle.entry.resource",
+      "Patient"
+    ]
+  }
+}

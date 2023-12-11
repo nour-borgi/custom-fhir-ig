@@ -1,0 +1,32 @@
+{
+  "resourceType" : "Patient",
+  "id" : "PatientExample",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Holland Michael Smith </b> male, DoB: 2022-07-07</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail:</td><td colspan=\"3\">123 Main St Anytown 12345 US </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient contact\">Contact</td><td colspan=\"3\"><ul><li>ph: 555-555-5555(HOME)</li><li><a href=\"mailto:john.anyperson@example.com\">john.anyperson@example.com</a></li></ul></td></tr></table></div>"
+  },
+  "name" : [{
+    "family" : "Smith",
+    "given" : ["Holland",
+    "Michael"]
+  }],
+  "gender" : "male",
+  "birthDate" : "2022-07-07",
+  "address" : [{
+    "line" : ["123 Main St"],
+    "city" : "Anytown",
+    "postalCode" : "12345",
+    "country" : "US"
+  }],
+  "contact" : [{
+    "telecom" : [{
+      "system" : "phone",
+      "value" : "555-555-5555",
+      "use" : "home"
+    },
+    {
+      "system" : "email",
+      "value" : "john.anyperson@example.com"
+    }]
+  }]
+}

@@ -1,0 +1,50 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://cdr.com/hiv-regimen-codes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "DispenseCodesCodeSystem",
+      "title" : "ARV Drugs Dispense Codes Code System",
+      "description" : "A list of codes describing the ARV Drugs dispense codes",
+      "uses" : {
+      },
+      "ValueSet-dispense-codes-value-set.html" : "ARV Drugs Dispense Codes Value Set"
+    },
+    {
+      "url" : "http://cdr.com/medication-dispense/status-reason",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "FollowUpStatusCodeSystem",
+      "title" : "Follow Up Status Code System",
+      "description" : "A list of codes describing the follow up statuses",
+      "uses" : {
+      },
+      "ValueSet-followup-status-value-set.html" : "Follow Up Status Value Set"
+    },
+    {
+      "url" : "http://openhie.org/fhir/custom-fhir-ig/CodeSystem/client-key-population-code-system",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ClientKeyPopulationCodeSystem",
+      "title" : "Client Key Population CodeSystem",
+      "description" : "Client Key Population custom code system",
+      "uses" : {
+      },
+      "ValueSet-client-key-population-values.html" : "Client Key Population Values"
+    },
+    {
+      "url" : "http://snomed.info/sct",
+      "version" : null,
+      "status" : "active",
+      "name" : "SNOMED_CT",
+      "title" : "SNOMED CT (all versions)",
+      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+      "oids" : ["2.16.840.1.113883.6.96"],
+      "uses" : {
+      },
+      "ValueSet-client-key-population-values.html" : "Client Key Population Values",
+      "ValueSet-dispense-codes-value-set.html" : "ARV Drugs Dispense Codes Value Set"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Used
+http://cdr.com/hiv-regimen-codes,1.0.0,active,,DispenseCodesCodeSystem,ARV Drugs Dispense Codes Code System,"A list of codes describing the ARV Drugs dispense codes",
+http://cdr.com/medication-dispense/status-reason,1.0.0,active,,FollowUpStatusCodeSystem,Follow Up Status Code System,"A list of codes describing the follow up statuses",
+http://openhie.org/fhir/custom-fhir-ig/CodeSystem/client-key-population-code-system,1.0.0,active,,ClientKeyPopulationCodeSystem,Client Key Population CodeSystem,"Client Key Population custom code system",

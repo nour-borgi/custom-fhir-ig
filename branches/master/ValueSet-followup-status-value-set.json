@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "followup-status-value-set",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-followup-status-code-system.html\"><code>http://cdr.com/medication-dispense/status-reason</code></a></li></ul></div>"
+  },
+  "url" : "http://openhie.org/fhir/custom-fhir-ig/ValueSet/followup-status-value-set",
+  "version" : "1.0.0",
+  "name" : "FollowUpStatusValueSet",
+  "title" : "Follow Up Status Value Set",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-12-11T09:01:08+00:00",
+  "publisher" : "Jembi Health Systems",
+  "contact" : [{
+    "name" : "Jembi Health Systems",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.jembi.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info.jembi.org"
+    }]
+  },
+  {
+    "name" : "Nour Borgi",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "nour@symbionix.co",
+      "use" : "work"
+    }]
+  }],
+  "description" : "FollowUp Status Value Set",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://cdr.com/medication-dispense/status-reason"
+    }]
+  }
+}

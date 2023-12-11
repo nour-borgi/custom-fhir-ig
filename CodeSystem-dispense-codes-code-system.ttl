@@ -1,0 +1,222 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/custom-fhir-ig/CodeSystem/dispense-codes-code-system> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "dispense-codes-code-system"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://cdr.com/hiv-regimen-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1a<a name=\"dispense-codes-code-system-1a\"> </a></td><td>1a</td></tr><tr><td style=\"white-space:nowrap\">1b<a name=\"dispense-codes-code-system-1b\"> </a></td><td>1b</td></tr><tr><td style=\"white-space:nowrap\">1c<a name=\"dispense-codes-code-system-1c\"> </a></td><td>AZT + 3TC + NVP - Product containing only lamivudine and nevirapine and zidovudine</td></tr><tr><td style=\"white-space:nowrap\">1d<a name=\"dispense-codes-code-system-1d\"> </a></td><td>AZT + 3TC + EFV</td></tr><tr><td style=\"white-space:nowrap\">1e<a name=\"dispense-codes-code-system-1e\"> </a></td><td>Product containing only efavirenz and lamivudine and tenofovir - TDF + 3TC + EFV</td></tr><tr><td style=\"white-space:nowrap\">1f<a name=\"dispense-codes-code-system-1f\"> </a></td><td>TDF + 3TC + NVP</td></tr><tr><td style=\"white-space:nowrap\">1g<a name=\"dispense-codes-code-system-1g\"> </a></td><td>ABC + 3TC + EFV - Product containing abacavir and lamivudine</td></tr><tr><td style=\"white-space:nowrap\">1h<a name=\"dispense-codes-code-system-1h\"> </a></td><td>ABC + 3TC + NVP - Product containing abacavir and lamivudine</td></tr><tr><td style=\"white-space:nowrap\">1j<a name=\"dispense-codes-code-system-1j\"> </a></td><td>TDF + 3TC + DTG</td></tr><tr><td style=\"white-space:nowrap\">1k<a name=\"dispense-codes-code-system-1k\"> </a></td><td>AZT + 3TC + DTG</td></tr><tr><td style=\"white-space:nowrap\">1a-30<a name=\"dispense-codes-code-system-1a-30\"> </a></td><td>1a-30</td></tr><tr><td style=\"white-space:nowrap\">1a-40<a name=\"dispense-codes-code-system-1a-40\"> </a></td><td>1a-40</td></tr><tr><td style=\"white-space:nowrap\">1b-30<a name=\"dispense-codes-code-system-1b-30\"> </a></td><td>1b-30</td></tr><tr><td style=\"white-space:nowrap\">1b-40<a name=\"dispense-codes-code-system-1b-40\"> </a></td><td>1b-40</td></tr><tr><td style=\"white-space:nowrap\">2a<a name=\"dispense-codes-code-system-2a\"> </a></td><td>2a</td></tr><tr><td style=\"white-space:nowrap\">2b<a name=\"dispense-codes-code-system-2b\"> </a></td><td>2b</td></tr><tr><td style=\"white-space:nowrap\">2c<a name=\"dispense-codes-code-system-2c\"> </a></td><td>2c</td></tr><tr><td style=\"white-space:nowrap\">2d<a name=\"dispense-codes-code-system-2d\"> </a></td><td>2d</td></tr><tr><td style=\"white-space:nowrap\">2e<a name=\"dispense-codes-code-system-2e\"> </a></td><td>AZT + 3TC + LPV/r - Product containing lamivudine and zidovudine</td></tr><tr><td style=\"white-space:nowrap\">2f<a name=\"dispense-codes-code-system-2f\"> </a></td><td>AZT + 3TC + ATV/r - Product containing lamivudine and zidovudine</td></tr><tr><td style=\"white-space:nowrap\">2g<a name=\"dispense-codes-code-system-2g\"> </a></td><td>TDF + 3TC+ LPV/r</td></tr><tr><td style=\"white-space:nowrap\">2h<a name=\"dispense-codes-code-system-2h\"> </a></td><td>TDF + 3TC + ATV/r</td></tr><tr><td style=\"white-space:nowrap\">2i<a name=\"dispense-codes-code-system-2i\"> </a></td><td>ABC + 3TC + LPV/r - Product containing abacavir and lamivudine</td></tr><tr><td style=\"white-space:nowrap\">3a<a name=\"dispense-codes-code-system-3a\"> </a></td><td>DRV/r + DTG + AZT/3TC</td></tr><tr><td style=\"white-space:nowrap\">3b<a name=\"dispense-codes-code-system-3b\"> </a></td><td>DRV/r + DTG + TDF/3TC - Product containing dolutegravir and lamivudine</td></tr><tr><td style=\"white-space:nowrap\">3d<a name=\"dispense-codes-code-system-3d\"> </a></td><td>DRV/r + ABC + EFV + 3TC</td></tr><tr><td style=\"white-space:nowrap\">4a<a name=\"dispense-codes-code-system-4a\"> </a></td><td>4a</td></tr><tr><td style=\"white-space:nowrap\">4b<a name=\"dispense-codes-code-system-4b\"> </a></td><td>4b</td></tr><tr><td style=\"white-space:nowrap\">4c<a name=\"dispense-codes-code-system-4c\"> </a></td><td>AZT + 3TC + NVP</td></tr><tr><td style=\"white-space:nowrap\">4d<a name=\"dispense-codes-code-system-4d\"> </a></td><td>AZT + 3TC + EFV</td></tr><tr><td style=\"white-space:nowrap\">4e<a name=\"dispense-codes-code-system-4e\"> </a></td><td>TDF + 3TC + EFV</td></tr><tr><td style=\"white-space:nowrap\">4f<a name=\"dispense-codes-code-system-4f\"> </a></td><td>AZT + 3TC + LPV/r</td></tr><tr><td style=\"white-space:nowrap\">4g<a name=\"dispense-codes-code-system-4g\"> </a></td><td>ABC + 3TC + LPV/r</td></tr><tr><td style=\"white-space:nowrap\">4j<a name=\"dispense-codes-code-system-4j\"> </a></td><td>ABC + 3TC + DTG</td></tr><tr><td style=\"white-space:nowrap\">4i<a name=\"dispense-codes-code-system-4i\"> </a></td><td>TDF + 3TC + DTG</td></tr><tr><td style=\"white-space:nowrap\">4k<a name=\"dispense-codes-code-system-4k\"> </a></td><td>AZT + 3TC + DTG</td></tr><tr><td style=\"white-space:nowrap\">5a<a name=\"dispense-codes-code-system-5a\"> </a></td><td>5a</td></tr><tr><td style=\"white-space:nowrap\">5b<a name=\"dispense-codes-code-system-5b\"> </a></td><td>5b</td></tr><tr><td style=\"white-space:nowrap\">5c<a name=\"dispense-codes-code-system-5c\"> </a></td><td>5c</td></tr><tr><td style=\"white-space:nowrap\">5d<a name=\"dispense-codes-code-system-5d\"> </a></td><td>5d</td></tr><tr><td style=\"white-space:nowrap\">5e<a name=\"dispense-codes-code-system-5e\"> </a></td><td>ABC + 3TC + LPV/r</td></tr><tr><td style=\"white-space:nowrap\">5f<a name=\"dispense-codes-code-system-5f\"> </a></td><td>AZT + 3TC + LPV/r</td></tr><tr><td style=\"white-space:nowrap\">5g<a name=\"dispense-codes-code-system-5g\"> </a></td><td>TDF + 3TC + EFV</td></tr><tr><td style=\"white-space:nowrap\">5h<a name=\"dispense-codes-code-system-5h\"> </a></td><td>ABC + 3TC + EFV</td></tr><tr><td style=\"white-space:nowrap\">5i<a name=\"dispense-codes-code-system-5i\"> </a></td><td>TDF + 3TC + LPV/r</td></tr><tr><td style=\"white-space:nowrap\">5j<a name=\"dispense-codes-code-system-5j\"> </a></td><td>other</td></tr><tr><td style=\"white-space:nowrap\">5k<a name=\"dispense-codes-code-system-5k\"> </a></td><td>RAL + AZT + 3TC</td></tr><tr><td style=\"white-space:nowrap\">5m<a name=\"dispense-codes-code-system-5m\"> </a></td><td>ABC + 3TC + DTG</td></tr><tr><td style=\"white-space:nowrap\">5n<a name=\"dispense-codes-code-system-5n\"> </a></td><td>ABC + 3TC + LPV/r</td></tr><tr><td style=\"white-space:nowrap\">6f<a name=\"dispense-codes-code-system-6f\"> </a></td><td>DRV/r + DTG + ABC + 3TC</td></tr><tr><td style=\"white-space:nowrap\">other-adult-1<a name=\"dispense-codes-code-system-other-adult-1\"> </a></td><td>Other Adult first line regimen</td></tr><tr><td style=\"white-space:nowrap\">other-adult-2<a name=\"dispense-codes-code-system-other-adult-2\"> </a></td><td>Other Adult second line regimen</td></tr><tr><td style=\"white-space:nowrap\">other-adult-3<a name=\"dispense-codes-code-system-other-adult-3\"> </a></td><td>Other Adult third line regimen</td></tr><tr><td style=\"white-space:nowrap\">other-children-1<a name=\"dispense-codes-code-system-other-children-1\"> </a></td><td>Other Children first line regimen</td></tr><tr><td style=\"white-space:nowrap\">other-children-2<a name=\"dispense-codes-code-system-other-children-2\"> </a></td><td>Other Children second line regimen</td></tr><tr><td style=\"white-space:nowrap\">other-children-3<a name=\"dispense-codes-code-system-other-children-3\"> </a></td><td>Other Children third line regimen</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://cdr.com/hiv-regimen-codes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "DispenseCodesCodeSystem"] ; # 
+  fhir:title [ fhir:v "ARV Drugs Dispense Codes Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-11T10:47:10+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Jembi Health Systems"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Jembi Health Systems" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.jembi.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info.jembi.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Nour Borgi" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "nour@symbionix.co" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A list of codes describing the ARV Drugs dispense codes"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "56"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1a" ] ;
+     fhir:display [ fhir:v "1a" ]
+  ] [
+     fhir:code [ fhir:v "1b" ] ;
+     fhir:display [ fhir:v "1b" ]
+  ] [
+     fhir:code [ fhir:v "1c" ] ;
+     fhir:display [ fhir:v "AZT + 3TC + NVP - Product containing only lamivudine and nevirapine and zidovudine" ]
+  ] [
+     fhir:code [ fhir:v "1d" ] ;
+     fhir:display [ fhir:v "AZT + 3TC + EFV" ]
+  ] [
+     fhir:code [ fhir:v "1e" ] ;
+     fhir:display [ fhir:v "Product containing only efavirenz and lamivudine and tenofovir - TDF + 3TC + EFV" ]
+  ] [
+     fhir:code [ fhir:v "1f" ] ;
+     fhir:display [ fhir:v "TDF + 3TC + NVP" ]
+  ] [
+     fhir:code [ fhir:v "1g" ] ;
+     fhir:display [ fhir:v "ABC + 3TC + EFV - Product containing abacavir and lamivudine" ]
+  ] [
+     fhir:code [ fhir:v "1h" ] ;
+     fhir:display [ fhir:v "ABC + 3TC + NVP - Product containing abacavir and lamivudine" ]
+  ] [
+     fhir:code [ fhir:v "1j" ] ;
+     fhir:display [ fhir:v "TDF + 3TC + DTG" ]
+  ] [
+     fhir:code [ fhir:v "1k" ] ;
+     fhir:display [ fhir:v "AZT + 3TC + DTG" ]
+  ] [
+     fhir:code [ fhir:v "1a-30" ] ;
+     fhir:display [ fhir:v "1a-30" ]
+  ] [
+     fhir:code [ fhir:v "1a-40" ] ;
+     fhir:display [ fhir:v "1a-40" ]
+  ] [
+     fhir:code [ fhir:v "1b-30" ] ;
+     fhir:display [ fhir:v "1b-30" ]
+  ] [
+     fhir:code [ fhir:v "1b-40" ] ;
+     fhir:display [ fhir:v "1b-40" ]
+  ] [
+     fhir:code [ fhir:v "2a" ] ;
+     fhir:display [ fhir:v "2a" ]
+  ] [
+     fhir:code [ fhir:v "2b" ] ;
+     fhir:display [ fhir:v "2b" ]
+  ] [
+     fhir:code [ fhir:v "2c" ] ;
+     fhir:display [ fhir:v "2c" ]
+  ] [
+     fhir:code [ fhir:v "2d" ] ;
+     fhir:display [ fhir:v "2d" ]
+  ] [
+     fhir:code [ fhir:v "2e" ] ;
+     fhir:display [ fhir:v "AZT + 3TC + LPV/r - Product containing lamivudine and zidovudine" ]
+  ] [
+     fhir:code [ fhir:v "2f" ] ;
+     fhir:display [ fhir:v "AZT + 3TC + ATV/r - Product containing lamivudine and zidovudine" ]
+  ] [
+     fhir:code [ fhir:v "2g" ] ;
+     fhir:display [ fhir:v "TDF + 3TC+ LPV/r" ]
+  ] [
+     fhir:code [ fhir:v "2h" ] ;
+     fhir:display [ fhir:v "TDF + 3TC + ATV/r" ]
+  ] [
+     fhir:code [ fhir:v "2i" ] ;
+     fhir:display [ fhir:v "ABC + 3TC + LPV/r - Product containing abacavir and lamivudine" ]
+  ] [
+     fhir:code [ fhir:v "3a" ] ;
+     fhir:display [ fhir:v "DRV/r + DTG + AZT/3TC" ]
+  ] [
+     fhir:code [ fhir:v "3b" ] ;
+     fhir:display [ fhir:v "DRV/r + DTG + TDF/3TC - Product containing dolutegravir and lamivudine" ]
+  ] [
+     fhir:code [ fhir:v "3d" ] ;
+     fhir:display [ fhir:v "DRV/r + ABC + EFV + 3TC" ]
+  ] [
+     fhir:code [ fhir:v "4a" ] ;
+     fhir:display [ fhir:v "4a" ]
+  ] [
+     fhir:code [ fhir:v "4b" ] ;
+     fhir:display [ fhir:v "4b" ]
+  ] [
+     fhir:code [ fhir:v "4c" ] ;
+     fhir:display [ fhir:v "AZT + 3TC + NVP" ]
+  ] [
+     fhir:code [ fhir:v "4d" ] ;
+     fhir:display [ fhir:v "AZT + 3TC + EFV" ]
+  ] [
+     fhir:code [ fhir:v "4e" ] ;
+     fhir:display [ fhir:v "TDF + 3TC + EFV" ]
+  ] [
+     fhir:code [ fhir:v "4f" ] ;
+     fhir:display [ fhir:v "AZT + 3TC + LPV/r" ]
+  ] [
+     fhir:code [ fhir:v "4g" ] ;
+     fhir:display [ fhir:v "ABC + 3TC + LPV/r" ]
+  ] [
+     fhir:code [ fhir:v "4j" ] ;
+     fhir:display [ fhir:v "ABC + 3TC + DTG" ]
+  ] [
+     fhir:code [ fhir:v "4i" ] ;
+     fhir:display [ fhir:v "TDF + 3TC + DTG" ]
+  ] [
+     fhir:code [ fhir:v "4k" ] ;
+     fhir:display [ fhir:v "AZT + 3TC + DTG" ]
+  ] [
+     fhir:code [ fhir:v "5a" ] ;
+     fhir:display [ fhir:v "5a" ]
+  ] [
+     fhir:code [ fhir:v "5b" ] ;
+     fhir:display [ fhir:v "5b" ]
+  ] [
+     fhir:code [ fhir:v "5c" ] ;
+     fhir:display [ fhir:v "5c" ]
+  ] [
+     fhir:code [ fhir:v "5d" ] ;
+     fhir:display [ fhir:v "5d" ]
+  ] [
+     fhir:code [ fhir:v "5e" ] ;
+     fhir:display [ fhir:v "ABC + 3TC + LPV/r" ]
+  ] [
+     fhir:code [ fhir:v "5f" ] ;
+     fhir:display [ fhir:v "AZT + 3TC + LPV/r" ]
+  ] [
+     fhir:code [ fhir:v "5g" ] ;
+     fhir:display [ fhir:v "TDF + 3TC + EFV" ]
+  ] [
+     fhir:code [ fhir:v "5h" ] ;
+     fhir:display [ fhir:v "ABC + 3TC + EFV" ]
+  ] [
+     fhir:code [ fhir:v "5i" ] ;
+     fhir:display [ fhir:v "TDF + 3TC + LPV/r" ]
+  ] [
+     fhir:code [ fhir:v "5j" ] ;
+     fhir:display [ fhir:v "other" ]
+  ] [
+     fhir:code [ fhir:v "5k" ] ;
+     fhir:display [ fhir:v "RAL + AZT + 3TC" ]
+  ] [
+     fhir:code [ fhir:v "5m" ] ;
+     fhir:display [ fhir:v "ABC + 3TC + DTG" ]
+  ] [
+     fhir:code [ fhir:v "5n" ] ;
+     fhir:display [ fhir:v "ABC + 3TC + LPV/r" ]
+  ] [
+     fhir:code [ fhir:v "6f" ] ;
+     fhir:display [ fhir:v "DRV/r + DTG + ABC + 3TC" ]
+  ] [
+     fhir:code [ fhir:v "other-adult-1" ] ;
+     fhir:display [ fhir:v "Other Adult first line regimen" ]
+  ] [
+     fhir:code [ fhir:v "other-adult-2" ] ;
+     fhir:display [ fhir:v "Other Adult second line regimen" ]
+  ] [
+     fhir:code [ fhir:v "other-adult-3" ] ;
+     fhir:display [ fhir:v "Other Adult third line regimen" ]
+  ] [
+     fhir:code [ fhir:v "other-children-1" ] ;
+     fhir:display [ fhir:v "Other Children first line regimen" ]
+  ] [
+     fhir:code [ fhir:v "other-children-2" ] ;
+     fhir:display [ fhir:v "Other Children second line regimen" ]
+  ] [
+     fhir:code [ fhir:v "other-children-3" ] ;
+     fhir:display [ fhir:v "Other Children third line regimen" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

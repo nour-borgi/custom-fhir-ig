@@ -1,0 +1,5 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Used
+http://cdr.com/hiv-regimen-codes,1.0.0,active,,DispenseCodesCodeSystem,ARV Drugs Dispense Codes Code System,"A list of codes describing the ARV Drugs dispense codes","ValueSet/dispense-codes-value-set"
+http://cdr.com/medication-dispense/status-reason,1.0.0,active,,FollowUpStatusCodeSystem,Follow Up Status Code System,"A list of codes describing the follow up statuses","ValueSet/followup-status-value-set"
+http://openhie.org/fhir/custom-fhir-ig/CodeSystem/client-key-population-code-system,1.0.0,active,,ClientKeyPopulationCodeSystem,Client Key Population CodeSystem,"Client Key Population custom code system","ValueSet/client-key-population-values"
+http://snomed.info/sct,null,active,"2.16.840.1.113883.6.96",SNOMED_CT,SNOMED CT (all versions),"SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).","ValueSet/client-key-population-values,ValueSet/dispense-codes-value-set"

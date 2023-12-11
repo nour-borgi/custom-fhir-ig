@@ -1,0 +1,11 @@
+﻿/github/workspace/fsh-generated/resources/MedicationDispense-EthMedicationDispenseExample.json: line 41, col 4, Error - Unable to resolve resource with reference 'EthPatientExample' (STRUCTURE)
+/github/workspace/fsh-generated/resources/MedicationDispense-EthMedicationDispenseExample.json: line 47, col 4, Error - Error processing Unit: 'Tablet': The unit "Tablet" is unknown at character 1; Unknown Code 'Tablet' in the system 'http://unitsofmeasure.org|2.0.1'; The provided code 'http://unitsofmeasure.org#Tablet' is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server) for 'http://unitsofmeasure.org#Tablet' (CODEINVALID)
+/github/workspace/fsh-generated/resources/MedicationDispense-EthMedicationDispenseExample.json: line 9, col 4, Error - Error processing Unit: 'days': The unit "days" is unknown at character 1; Unknown Code 'days' in the system 'http://unitsofmeasure.org|2.0.1'; The provided code 'http://unitsofmeasure.org#days' is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server) for 'http://unitsofmeasure.org#days' (CODEINVALID)
+/github/workspace/fsh-generated/resources/StructureDefinition-eth-medication-dispense.json: line 1, col 124025, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
+
+CustomFHIRIG : Validation Results
+=========================================
+
+err = 3, warn = 0, info = 1
+IG Publisher Version: 1.5.5
+Generated Mon Dec 11 09:01:43 UTC 2023. FHIR version 4.0.1 for openhie.fhir.custom.ig.nour#1.0.0 (canonical = http://openhie.org/fhir/custom-fhir-ig)

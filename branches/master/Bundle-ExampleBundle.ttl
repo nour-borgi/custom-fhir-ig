@@ -1,0 +1,98 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/custom-fhir-ig/Bundle/ExampleBundle> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleBundle"] ; # 
+  fhir:type [ fhir:v "transaction"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://openhie.org/fhir/custom-fhir-ig/Patient/PatientExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://openhie.org/fhir/custom-fhir-ig/Patient/PatientExample> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Patient/PatientExample"^^xsd:anyURI ]
+     ]
+  ] ) . # 
+
+<http://openhie.org/fhir/custom-fhir-ig/Patient/PatientExample> a fhir:Patient ;
+  fhir:id [ fhir:v "PatientExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/hiv-patient"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/hiv-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"PatientExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;PatientExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-patient.html\">hiv-patient</a></p></div><p><b>ClientKeyPopulationExtension</b>: Current drug user <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#417284009)</span></p><p><b>identifier</b>: Patient folder Number: MR001, id: NID001</p><p><b>name</b>: Holland Michael Smith </p><p><b>telecom</b>: ph: 555-555-5555(HOME), <a href=\"mailto:john.anyperson@example.com\">john.anyperson@example.com</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 2022-07-07</p><p><b>address</b>: 123 Main St Anytown State 12345 US </p><p><b>maritalStatus</b>: A current marriage contract is active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-MaritalStatus.html\">MaritalStatus</a>#M &quot;Married&quot;)</span></p><p><b>managingOrganization</b>: <a href=\"Organization-OrganizationExample.html\">Organization/OrganizationExample</a> &quot;Facility&quot;</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/client-key-population-extension"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:417284009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "417284009" ] ;
+         fhir:display [ fhir:v "Current drug user" ]
+       ] ) ;
+       fhir:text [ fhir:v "Current drug user" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MR" ] ;
+         fhir:display [ fhir:v "Medical Record Number" ]
+       ] ) ;
+       fhir:text [ fhir:v "Patient folder Number" ]
+     ] ;
+     fhir:system [ fhir:v "http://openhie.org/fhir/training-solution-1/identifier/mr"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "MR001" ]
+  ] [
+     fhir:system [ fhir:v "http://openhie.org/fhir/training-solution-1/identifier/nid"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "NID001" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Smith" ] ;
+     fhir:given ( [ fhir:v "Holland" ] [ fhir:v "Michael" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "555-555-5555" ] ;
+     fhir:use [ fhir:v "home" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "john.anyperson@example.com" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "2022-07-07"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "123 Main St" ] ) ;
+     fhir:city [ fhir:v "Anytown" ] ;
+     fhir:district [ fhir:v "District" ] ;
+     fhir:state [ fhir:v "State" ] ;
+     fhir:postalCode [ fhir:v "12345" ] ;
+     fhir:country [ fhir:v "US" ]
+  ] ) ; # 
+  fhir:maritalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "M" ] ;
+       fhir:display [ fhir:v "Married" ]
+     ] ) ;
+     fhir:text [ fhir:v "A current marriage contract is active" ]
+  ] ; # 
+  fhir:managingOrganization [
+     fhir:link <http://openhie.org/fhir/custom-fhir-ig/Organization/OrganizationExample> ;
+     fhir:reference [ fhir:v "Organization/OrganizationExample" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,24 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-openhie.fhir.custom.ig.nour.json	8378	-	0	0	0	0	0	0	5	76	0	0	0	0	0	0	0	1	0	0	144	106	0	0	0	4	0	1
+fsh-generated/resources/Bundle-ExampleBundle.json	2823	11	0	0	0	0	11	0	1	200	0	0	0	0	0	0	0	0	0	0	21	22	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-client-key-population-code-system.json	544	10	0	0	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	15	1479	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-dispense-codes-code-system.json	4662	15	0	0	0	0	0	0	1	21	0	0	0	0	0	0	0	0	0	0	57	109	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-followup-status-code-system.json	847	8	0	0	0	0	0	0	0	11	0	0	0	0	0	0	0	0	0	0	16	51	0	0	0	0	0	0
+fsh-generated/resources/Encounter-EthEncounterExample.json	1021	11	0	0	0	0	0	0	0	176	0	0	0	0	0	0	0	0	0	0	13	18	0	0	0	0	0	0
+fsh-generated/resources/MedicationDispense-EthMedicationDispenseExample.json	1161	11	0	0	0	0	0	0	0	183	0	0	0	0	0	0	0	0	0	0	15	16	0	0	0	0	0	0
+fsh-generated/resources/Organization-EthOrganizationExample.json	600	3	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	8	10	0	0	0	0	0	0
+fsh-generated/resources/Organization-OrganizationExample.json	435	3	1	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	10	7	0	0	0	0	0	0
+fsh-generated/resources/Patient-EthPatientExample.json	1071	4	0	0	0	0	0	0	1	6	0	0	0	0	0	0	0	0	0	0	12	10	0	0	0	0	0	0
+fsh-generated/resources/Patient-PatientExample.json	1979	4	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	17	11	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-arv-dose-end-date.json	1514	3	0	0	0	0	0	16	0	31	0	0	0	0	0	0	0	0	0	0	73	467	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-client-key-population-extension.json	1689	3	0	0	0	0	0	15	0	19	0	0	0	0	0	0	0	1	0	0	74	258	0	1	0	1	0	0
+fsh-generated/resources/StructureDefinition-encounter-next-visit.json	1385	3	0	0	0	0	0	17	0	17	0	0	0	0	0	0	0	0	0	0	70	184	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-encounter-visit-type.json	1373	2	0	0	0	0	0	17	0	17	0	0	0	0	0	0	0	0	0	0	70	151	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-eth-encounter.json	3880	7	0	0	0	0	0	207	0	146	0	0	1	0	0	0	0	1	0	0	540	1147	0	0	0	13	0	1
+fsh-generated/resources/StructureDefinition-eth-medication-dispense.json	6063	8	0	0	0	0	0	191	0	131	0	0	0	0	0	0	0	1	0	0	485	586	0	0	0	14	0	3
+fsh-generated/resources/StructureDefinition-eth-organization.json	3030	6	0	0	0	0	0	130	0	116	0	0	0	0	0	0	0	1	0	0	324	399	0	0	0	13	0	0
+fsh-generated/resources/StructureDefinition-eth-patient.json	4196	6	0	0	0	0	0	166	0	133	0	0	0	0	0	0	0	1	0	0	447	473	0	0	0	17	0	1
+fsh-generated/resources/StructureDefinition-hiv-patient.json	7387	10	0	0	0	0	0	226	0	187	0	0	0	0	0	0	0	1	0	0	660	627	0	0	0	23	1	2
+fsh-generated/resources/ValueSet-client-key-population-values.json	1231	3	1	0	0	0	0	0	0	153	0	0	0	0	0	0	0	0	0	0	12	3338	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-dispense-codes-value-set.json	1376	2	0	0	0	0	0	0	1	83	0	0	0	0	0	0	0	0	0	0	13	201	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-followup-status-value-set.json	454	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	8	47	0	0	0	1	0	0

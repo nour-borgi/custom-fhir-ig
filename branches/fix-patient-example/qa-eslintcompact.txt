@@ -1,0 +1,9 @@
+﻿/github/workspace/fsh-generated/resources/StructureDefinition-client-key-population-extension.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
+
+CustomFHIRIG : Validation Results
+=========================================
+
+err = 0, warn = 2, info = 0
+IG Publisher Version: 1.5.5
+Generated Fri Dec 01 15:56:55 UTC 2023. FHIR version 4.0.1 for custom-fhir-ig#1.0.0 (canonical = https://github.com/nour-borgi/custom-fhir-ig)

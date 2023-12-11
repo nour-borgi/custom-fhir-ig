@@ -1,0 +1,37 @@
+[
+  {
+    "id" : "client-key-population-code-system",
+    "type" : "CodeSystem",
+    "url" : "https://github.com/nour-borgi/custom-fhir-ig/CodeSystem/client-key-population-code-system",
+    "version" : "1.0.0",
+    "name" : "ClientKeyPopulationCodeSystem"
+  },
+  {
+    "id" : "custom-fhir-ig",
+    "type" : "ImplementationGuide",
+    "url" : "https://github.com/nour-borgi/custom-fhir-ig/ImplementationGuide/custom-fhir-ig",
+    "version" : "1.0.0",
+    "name" : "CustomFHIRIG"
+  },
+  {
+    "id" : "client-key-population-extension",
+    "type" : "StructureDefinition",
+    "url" : "https://github.com/nour-borgi/custom-fhir-ig/StructureDefinition/client-key-population-extension",
+    "version" : "1.0.0",
+    "name" : "ClientKeyPopulationExtension"
+  },
+  {
+    "id" : "hiv-patient",
+    "type" : "StructureDefinition",
+    "url" : "https://github.com/nour-borgi/custom-fhir-ig/StructureDefinition/hiv-patient",
+    "version" : "1.0.0",
+    "name" : "HivPatient"
+  },
+  {
+    "id" : "client-key-population-values",
+    "type" : "ValueSet",
+    "url" : "https://github.com/nour-borgi/custom-fhir-ig/ValueSet/client-key-population-values",
+    "version" : "1.0.0",
+    "name" : "ClientKeyPopulationValues"
+  }
+]

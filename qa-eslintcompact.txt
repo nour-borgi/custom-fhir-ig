@@ -1,0 +1,9 @@
+﻿/github/workspace/fsh-generated/resources/MedicationDispense-EthMedicationDispenseExample.json: line 47, col 4, Warning - UCUM Codes that contain human readable annotations like {tbl} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-eth-medication-dispense.json: line 1, col 124025, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
+
+CustomFHIRIG : Validation Results
+=========================================
+
+err = 0, warn = 1, info = 1
+IG Publisher Version: 1.5.5
+Generated Mon Dec 11 10:47:47 UTC 2023. FHIR version 4.0.1 for openhie.fhir.custom.ig.nour#1.0.0 (canonical = http://openhie.org/fhir/custom-fhir-ig)

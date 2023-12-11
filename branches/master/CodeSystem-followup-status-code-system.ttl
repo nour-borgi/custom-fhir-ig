@@ -1,0 +1,75 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/custom-fhir-ig/CodeSystem/followup-status-code-system> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "followup-status-code-system"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://cdr.com/medication-dispense/status-reason</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">alive-on-art<a name=\"followup-status-code-system-alive-on-art\"> </a></td><td>Alive on ART</td></tr><tr><td style=\"white-space:nowrap\">to<a name=\"followup-status-code-system-to\"> </a></td><td>TO</td></tr><tr><td style=\"white-space:nowrap\">dead<a name=\"followup-status-code-system-dead\"> </a></td><td>Dead</td></tr><tr><td style=\"white-space:nowrap\">drop<a name=\"followup-status-code-system-drop\"> </a></td><td>Drop</td></tr><tr><td style=\"white-space:nowrap\">restart<a name=\"followup-status-code-system-restart\"> </a></td><td>Restart</td></tr><tr><td style=\"white-space:nowrap\">lost<a name=\"followup-status-code-system-lost\"> </a></td><td>Lost</td></tr><tr><td style=\"white-space:nowrap\">stop<a name=\"followup-status-code-system-stop\"> </a></td><td>Stop</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://cdr.com/medication-dispense/status-reason"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "FollowUpStatusCodeSystem"] ; # 
+  fhir:title [ fhir:v "Follow Up Status Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-11T09:01:08+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Jembi Health Systems"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Jembi Health Systems" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.jembi.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info.jembi.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Nour Borgi" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "nour@symbionix.co" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A list of codes describing the follow up statuses"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "alive-on-art" ] ;
+     fhir:display [ fhir:v "Alive on ART" ]
+  ] [
+     fhir:code [ fhir:v "to" ] ;
+     fhir:display [ fhir:v "TO" ]
+  ] [
+     fhir:code [ fhir:v "dead" ] ;
+     fhir:display [ fhir:v "Dead" ]
+  ] [
+     fhir:code [ fhir:v "drop" ] ;
+     fhir:display [ fhir:v "Drop" ]
+  ] [
+     fhir:code [ fhir:v "restart" ] ;
+     fhir:display [ fhir:v "Restart" ]
+  ] [
+     fhir:code [ fhir:v "lost" ] ;
+     fhir:display [ fhir:v "Lost" ]
+  ] [
+     fhir:code [ fhir:v "stop" ] ;
+     fhir:display [ fhir:v "Stop" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

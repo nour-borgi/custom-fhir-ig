@@ -1,0 +1,13 @@
+{
+  "url" : "http://openhie.org/fhir/custom-fhir-ig/ImplementationGuide/openhie.fhir.custom.ig.nour",
+  "name" : "CustomFHIRIG",
+  "package-id" : "openhie.fhir.custom.ig.nour",
+  "ig-ver" : "1.0.0",
+  "date" : "Thu, 07 Dec, 2023 09:49:53 +0000",
+  "errs" : 4,
+  "warnings" : 0,
+  "hints" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 1631160824
+}

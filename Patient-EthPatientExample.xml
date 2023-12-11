@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="EthPatientExample"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/eth-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Anonymous Patient</b> female, DoB: 2000-11-11 ( Medical record number: MRN1234567)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Other Ids (see the one above)">Other Ids:</td><td colspan="3"><ul><li>id: NID1234567</li><li>id: UAN1234567</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail:</td><td colspan="3">123 Tesfaye Street Bole Addis Ababa Addis Ababa </td></tr><tr><td style="background-color: #f3f5da" title="Patient Links">Links:</td><td colspan="3"><ul><li>Managing Organization: <a href="Organization-EthOrganizationExample.html">Organization/EthOrganizationExample</a> &quot;Meshwalkiya Health Center&quot;</li></ul></td></tr></table></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="MR"/>
+        <display value="Medical record number"/>
+      </coding>
+      <text value="Medical record number"/>
+    </type>
+    <system value="http://cdr.com/MRN"/>
+    <value value="MRN1234567"/>
+  </identifier>
+  <identifier>
+    <system value="http://cdr.com/SmartCareID"/>
+    <value value="NID1234567"/>
+  </identifier>
+  <identifier>
+    <system value="http://cdr.com/UAN"/>
+    <value value="UAN1234567"/>
+  </identifier>
+  <gender value="female"/>
+  <birthDate value="2000-11-11"/>
+  <address>
+    <line value="123"/>
+    <line value="Tesfaye Street"/>
+    <line value="Bole"/>
+    <city value="Addis Ababa"/>
+    <district value="Addis Ababa Central District"/>
+    <state value="Addis Ababa"/>
+  </address>
+  <managingOrganization>
+    <reference value="Organization/EthOrganizationExample"/>
+  </managingOrganization>
+</Patient>

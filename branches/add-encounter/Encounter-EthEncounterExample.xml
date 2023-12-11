@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="EthEncounterExample"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/eth-encounter"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter</b><a name="EthEncounterExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter &quot;EthEncounterExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-eth-encounter.html">Ethiopia Encounter Profile</a></p></div><p><b>Encounter Next Visit Extension</b>: 2013-01-15</p><p><b>Encounter Visit Type Extension</b>: Unscheduled</p><p><b>identifier</b>: id: 001</p><p><b>status</b>: finished</p><p><b>class</b>: observation encounter (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code OBSENC = 'observation encounter', stated as 'observation encounter')</p><p><b>type</b>: Follow-up encounter <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#390906007)</span></p><p><b>subject</b>: <a href="Patient-PatientExample.html">Patient/PatientExample</a> &quot; SMITH&quot;</p><p><b>period</b>: 2012-12-09 --&gt; 2012-12-09</p></div>
+  </text>
+  <extension url="http://cdr.aacahb.gov.et/next-visit">
+    <valueDateTime value="2013-01-15"/>
+  </extension>
+  <extension url="http://cdr.aacahb.gov.et/visit-type">
+    <valueString value="Unscheduled"/>
+  </extension>
+  <identifier>
+    <system value="http://cdr.aacahb.gov.et/Encounter"/>
+    <value value="001"/>
+  </identifier>
+  <status value="finished"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="OBSENC"/>
+    <display value="observation encounter"/>
+  </class>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="390906007"/>
+      <display value="Follow-up encounter"/>
+    </coding>
+    <text value="Follow-up encounter"/>
+  </type>
+  <subject>
+    <reference value="Patient/PatientExample"/>
+  </subject>
+  <period>
+    <start value="2012-12-09"/>
+    <end value="2012-12-09"/>
+  </period>
+</Encounter>

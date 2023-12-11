@@ -1,0 +1,13 @@
+{
+  "url" : "https://github.com/nour-borgi/custom-fhir-ig/ImplementationGuide/custom-fhir-ig",
+  "name" : "CustomFHIRIG",
+  "package-id" : "custom-fhir-ig",
+  "ig-ver" : "1.0.0",
+  "date" : "Fri, 01 Dec, 2023 15:56:33 +0000",
+  "errs" : 0,
+  "warnings" : 2,
+  "hints" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 1851849448
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "id" : "arv-dose-end-date",
+    "type" : "StructureDefinition",
+    "url" : "http://cdr.com/dose-end-date",
+    "version" : "1.0.0",
+    "name" : "MedicationDispenseDoseEndDateExtension"
+  },
+  {
+    "id" : "dispense-codes-code-system",
+    "type" : "CodeSystem",
+    "url" : "http://cdr.com/hiv-regimen-codes",
+    "version" : "1.0.0",
+    "name" : "DispenseCodesCodeSystem"
+  },
+  {
+    "id" : "followup-status-code-system",
+    "type" : "CodeSystem",
+    "url" : "http://cdr.com/medication-dispense/status-reason",
+    "version" : "1.0.0",
+    "name" : "FollowUpStatusCodeSystem"
+  },
+  {
+    "id" : "encounter-next-visit",
+    "type" : "StructureDefinition",
+    "url" : "http://cdr.com/next-visit",
+    "version" : "1.0.0",
+    "name" : "EncounterNextVisitExtension"
+  },
+  {
+    "id" : "encounter-visit-type",
+    "type" : "StructureDefinition",
+    "url" : "http://cdr.com/visit-type",
+    "version" : "1.0.0",
+    "name" : "EncounterVisitTypeExtension"
+  },
+  {
+    "id" : "client-key-population-code-system",
+    "type" : "CodeSystem",
+    "url" : "http://openhie.org/fhir/custom-fhir-ig/CodeSystem/client-key-population-code-system",
+    "version" : "1.0.0",
+    "name" : "ClientKeyPopulationCodeSystem"
+  },
+  {
+    "id" : "openhie.fhir.custom.ig.nour",
+    "type" : "ImplementationGuide",
+    "url" : "http://openhie.org/fhir/custom-fhir-ig/ImplementationGuide/openhie.fhir.custom.ig.nour",
+    "version" : "1.0.0",
+    "name" : "CustomFHIRIG"
+  },
+  {
+    "id" : "client-key-population-extension",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/client-key-population-extension",
+    "version" : "1.0.0",
+    "name" : "ClientKeyPopulationExtension"
+  },
+  {
+    "id" : "eth-encounter",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/eth-encounter",
+    "version" : "1.0.0",
+    "name" : "EthEncounterProfile"
+  },
+  {
+    "id" : "eth-medication-dispense",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/eth-medication-dispense",
+    "version" : "1.0.0",
+    "name" : "EthMedicationDispense"
+  },
+  {
+    "id" : "eth-organization",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/eth-organization",
+    "version" : "1.0.0",
+    "name" : "EthOrganizationProfile"
+  },
+  {
+    "id" : "eth-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/eth-patient",
+    "version" : "1.0.0",
+    "name" : "EthPatient"
+  },
+  {
+    "id" : "hiv-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/hiv-patient",
+    "version" : "1.0.0",
+    "name" : "HivPatient"
+  },
+  {
+    "id" : "client-key-population-values",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/custom-fhir-ig/ValueSet/client-key-population-values",
+    "version" : "1.0.0",
+    "name" : "ClientKeyPopulationValues"
+  },
+  {
+    "id" : "dispense-codes-value-set",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/custom-fhir-ig/ValueSet/dispense-codes-value-set",
+    "version" : "1.0.0",
+    "name" : "DispenseCodesValueSet"
+  },
+  {
+    "id" : "followup-status-value-set",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/custom-fhir-ig/ValueSet/followup-status-value-set",
+    "version" : "1.0.0",
+    "name" : "FollowUpStatusValueSet"
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "client-key-population-code-system",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://openhie.org/fhir/custom-fhir-ig/CodeSystem/client-key-population-code-system</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">General-Population<a name=\"client-key-population-code-system-General-Population\"> </a></td><td>General Population</td></tr></table></div>"
+  },
+  "url" : "http://openhie.org/fhir/custom-fhir-ig/CodeSystem/client-key-population-code-system",
+  "version" : "1.0.0",
+  "name" : "ClientKeyPopulationCodeSystem",
+  "title" : "Client Key Population CodeSystem",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-12-11T10:47:10+00:00",
+  "publisher" : "Jembi Health Systems",
+  "contact" : [{
+    "name" : "Jembi Health Systems",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.jembi.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info.jembi.org"
+    }]
+  },
+  {
+    "name" : "Nour Borgi",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "nour@symbionix.co",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Client Key Population custom code system",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "General-Population",
+    "display" : "General Population"
+  }]
+}

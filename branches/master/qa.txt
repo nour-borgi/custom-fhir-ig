@@ -1,0 +1,56 @@
+﻿CustomFHIRIG : Validation Results
+=========================================
+
+err = 3, warn = 0, info = 1
+IG Publisher Version: 1.5.5
+Generated Mon Dec 11 09:01:43 UTC 2023. FHIR version 4.0.1 for openhie.fhir.custom.ig.nour#1.0.0 (canonical = http://openhie.org/fhir/custom-fhir-ig)
+ Build Errors : 1 / 0 / 0
+ /github/workspace/fsh-generated/resources/Bundle-ExampleBundle : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/CodeSystem-client-key-population-code-system : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-dispense-codes-code-system : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-followup-status-code-system : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Encounter-EthEncounterExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-openhie.fhir.custom.ig.nour : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationDispense-EthMedicationDispenseExample : 3 / 0 / 1
+ /github/workspace/fsh-generated/resources/Organization-EthOrganizationExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Organization-OrganizationExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-PatientExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-arv-dose-end-date : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-client-key-population-extension : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-encounter-next-visit : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-encounter-visit-type : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-eth-encounter : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-eth-medication-dispense : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-eth-organization : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-client-key-population-values : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-dispense-codes-value-set : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-followup-status-value-set : 0 / 0 / 1
+</table>
+== n/a ==
+ERROR: /github/workspace/output/MedicationDispense-EthMedicationDispenseExample.html#/html/body/div/div/div/div/div/div/p/a at Line 214, column 1155: The link 'EthPatientExample' for "EthPatientExample" cannot be resolved
+== fsh-generated/resources/Bundle-ExampleBundle.json ==
+== fsh-generated/resources/CodeSystem-client-key-population-code-system.json ==
+== fsh-generated/resources/CodeSystem-dispense-codes-code-system.json ==
+== fsh-generated/resources/CodeSystem-followup-status-code-system.json ==
+== fsh-generated/resources/Encounter-EthEncounterExample.json ==
+== fsh-generated/resources/ImplementationGuide-openhie.fhir.custom.ig.nour.json ==
+== fsh-generated/resources/MedicationDispense-EthMedicationDispenseExample.json ==
+ERROR: MedicationDispense/EthMedicationDispenseExample: MedicationDispense.subject: Unable to resolve resource with reference 'EthPatientExample'
+ERROR: MedicationDispense/EthMedicationDispenseExample: MedicationDispense.quantity: Error processing Unit: 'Tablet': The unit "Tablet" is unknown at character 1; Unknown Code 'Tablet' in the system 'http://unitsofmeasure.org|2.0.1'; The provided code 'http://unitsofmeasure.org#Tablet' is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server) for 'http://unitsofmeasure.org#Tablet'
+ERROR: MedicationDispense/EthMedicationDispenseExample: MedicationDispense.daysSupply: Error processing Unit: 'days': The unit "days" is unknown at character 1; Unknown Code 'days' in the system 'http://unitsofmeasure.org|2.0.1'; The provided code 'http://unitsofmeasure.org#days' is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server) for 'http://unitsofmeasure.org#days'
+== fsh-generated/resources/Organization-EthOrganizationExample.json ==
+== fsh-generated/resources/Organization-OrganizationExample.json ==
+== fsh-generated/resources/Patient-PatientExample.json ==
+== fsh-generated/resources/StructureDefinition-arv-dose-end-date.json ==
+== fsh-generated/resources/StructureDefinition-client-key-population-extension.json ==
+== fsh-generated/resources/StructureDefinition-encounter-next-visit.json ==
+== fsh-generated/resources/StructureDefinition-encounter-visit-type.json ==
+== fsh-generated/resources/StructureDefinition-eth-encounter.json ==
+== fsh-generated/resources/StructureDefinition-eth-medication-dispense.json ==
+INFORMATION: StructureDefinition/eth-medication-dispense: StructureDefinition.snapshot.element[59].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+== fsh-generated/resources/StructureDefinition-eth-organization.json ==
+== fsh-generated/resources/StructureDefinition-hiv-patient.json ==
+== fsh-generated/resources/ValueSet-client-key-population-values.json ==
+== fsh-generated/resources/ValueSet-dispense-codes-value-set.json ==
+== fsh-generated/resources/ValueSet-followup-status-value-set.json ==

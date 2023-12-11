@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <id value="EthMedicationDispenseExample"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/eth-medication-dispense"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationDispense</b><a name="EthMedicationDispenseExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationDispense &quot;EthMedicationDispenseExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-eth-medication-dispense.html">Medication Dispense Profile</a></p></div><p><b>Medication Dispense Dose End Date Extension</b>: 2024-04-03</p><p><b>status</b>: completed</p><p><b>statusReason</b>: Alive On ART <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-followup-status-code-system.html">Follow Up Status Code System</a>#alive-on-art)</span></p><p><b>medication</b>: 1j (TDF + 3TC + DTG) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-dispense-codes-code-system.html">ARV Drugs Dispense Codes Code System</a>#1j &quot;TDF + 3TC + DTG&quot;)</span></p><p><b>subject</b>: <a href="Patient-EthPatientExample.html">Patient/EthPatientExample</a></p><p><b>context</b>: <a href="Encounter-EthEncounterExample.html">Encounter/EthEncounterExample</a></p><p><b>quantity</b>: 90 {tbl}<span style="background: LightGoldenRodYellow"> (Details: UCUM code {tbl} = '{tbl}')</span></p><p><b>daysSupply</b>: 90 days<span style="background: LightGoldenRodYellow"> (Details: UCUM code d = 'd')</span></p></div>
+  </text>
+  <extension url="http://cdr.com/dose-end-date">
+    <valueDateTime value="2024-04-03"/>
+  </extension>
+  <status value="completed"/>
+  <statusReasonCodeableConcept>
+    <coding>
+      <system value="http://cdr.com/medication-dispense/status-reason"/>
+      <code value="alive-on-art"/>
+    </coding>
+    <text value="Alive On ART"/>
+  </statusReasonCodeableConcept>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://cdr.com/hiv-regimen-codes"/>
+      <code value="1j"/>
+      <display value="TDF + 3TC + DTG"/>
+    </coding>
+    <text value="1j (TDF + 3TC + DTG)"/>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/EthPatientExample"/>
+  </subject>
+  <context>
+    <reference value="Encounter/EthEncounterExample"/>
+  </context>
+  <quantity>
+    <value value="90"/>
+    <unit value="{tbl}"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="{tbl}"/>
+  </quantity>
+  <daysSupply>
+    <value value="90"/>
+    <unit value="days"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="d"/>
+  </daysSupply>
+</MedicationDispense>

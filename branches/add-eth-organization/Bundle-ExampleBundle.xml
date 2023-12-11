@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="ExampleBundle"/>
+  <type value="transaction"/>
+  <entry>
+    <fullUrl value="http://openhie.org/fhir/custom-fhir-ig/Patient/PatientExample"/>
+    <resource>
+      <Patient>
+        <id value="PatientExample"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/hiv-patient"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="PatientExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient &quot;PatientExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-hiv-patient.html">hiv-patient</a></p></div><p><b>ClientKeyPopulationExtension</b>: Current drug user <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#417284009)</span></p><p><b>identifier</b>: Patient folder Number: MR001, id: NID001</p><p><b>name</b>: Holland Michael Smith </p><p><b>telecom</b>: ph: 555-555-5555(HOME), <a href="mailto:john.anyperson@example.com">john.anyperson@example.com</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 2022-07-07</p><p><b>address</b>: 123 Main St Anytown State 12345 US </p><p><b>maritalStatus</b>: A current marriage contract is active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-MaritalStatus.html">MaritalStatus</a>#M &quot;Married&quot;)</span></p><p><b>managingOrganization</b>: <a href="Organization-OrganizationExample.html">Organization/OrganizationExample</a> &quot;Facility&quot;</p></div>
+        </text>
+        <extension url="http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/client-key-population-extension">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="417284009"/>
+              <display value="Current drug user"/>
+            </coding>
+            <text value="Current drug user"/>
+          </valueCodeableConcept>
+        </extension>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MR"/>
+              <display value="Medical Record Number"/>
+            </coding>
+            <text value="Patient folder Number"/>
+          </type>
+          <system value="http://openhie.org/fhir/training-solution-1/identifier/mr"/>
+          <value value="MR001"/>
+        </identifier>
+        <identifier>
+          <system value="http://openhie.org/fhir/training-solution-1/identifier/nid"/>
+          <value value="NID001"/>
+        </identifier>
+        <name>
+          <family value="Smith"/>
+          <given value="Holland"/>
+          <given value="Michael"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="555-555-5555"/>
+          <use value="home"/>
+        </telecom>
+        <telecom>
+          <system value="email"/>
+          <value value="john.anyperson@example.com"/>
+        </telecom>
+        <gender value="male"/>
+        <birthDate value="2022-07-07"/>
+        <address>
+          <line value="123 Main St"/>
+          <city value="Anytown"/>
+          <district value="District"/>
+          <state value="State"/>
+          <postalCode value="12345"/>
+          <country value="US"/>
+        </address>
+        <maritalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+            <code value="M"/>
+            <display value="Married"/>
+          </coding>
+          <text value="A current marriage contract is active"/>
+        </maritalStatus>
+        <managingOrganization>
+          <reference value="Organization/OrganizationExample"/>
+        </managingOrganization>
+      </Patient>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Patient/PatientExample"/>
+    </request>
+  </entry>
+</Bundle>

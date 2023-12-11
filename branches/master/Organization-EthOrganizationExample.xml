@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="EthOrganizationExample"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/eth-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="EthOrganizationExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;EthOrganizationExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-eth-organization.html">EthOrganizationProfile</a></p></div><p><b>identifier</b>: id: MOHID001, id: HFUID001</p><p><b>active</b>: true</p><p><b>name</b>: Meshwalkiya Health Center</p><p><b>address</b>: Meshulekia Kirkos Addis Ababa </p></div>
+  </text>
+  <identifier>
+    <system value="http://cdr.com/MOHId"/>
+    <value value="MOHID001"/>
+  </identifier>
+  <identifier>
+    <system value="http://cdr.com/HFUID"/>
+    <value value="HFUID001"/>
+  </identifier>
+  <active value="true"/>
+  <name value="Meshwalkiya Health Center"/>
+  <address>
+    <line value="Meshulekia"/>
+    <city value="Kirkos"/>
+    <district value="Kirkos woreda 9"/>
+    <state value="Addis Ababa"/>
+  </address>
+</Organization>

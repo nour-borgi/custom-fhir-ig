@@ -1,0 +1,57 @@
+﻿CustomFHIRIG : Validation Results
+=========================================
+
+err = 0, warn = 1, info = 1
+IG Publisher Version: 1.5.5
+Generated Mon Dec 11 10:47:47 UTC 2023. FHIR version 4.0.1 for openhie.fhir.custom.ig.nour#1.0.0 (canonical = http://openhie.org/fhir/custom-fhir-ig)
+ Build Errors : 0 / 0 / 0
+ /github/workspace/fsh-generated/resources/Bundle-ExampleBundle : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/CodeSystem-client-key-population-code-system : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-dispense-codes-code-system : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-followup-status-code-system : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Encounter-EthEncounterExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-openhie.fhir.custom.ig.nour : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationDispense-EthMedicationDispenseExample : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Organization-EthOrganizationExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Organization-OrganizationExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-EthPatientExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-PatientExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-arv-dose-end-date : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-client-key-population-extension : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-encounter-next-visit : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-encounter-visit-type : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-eth-encounter : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-eth-medication-dispense : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-eth-organization : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-eth-patient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-client-key-population-values : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-dispense-codes-value-set : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-followup-status-value-set : 0 / 0 / 1
+</table>
+== n/a ==
+== fsh-generated/resources/Bundle-ExampleBundle.json ==
+== fsh-generated/resources/CodeSystem-client-key-population-code-system.json ==
+== fsh-generated/resources/CodeSystem-dispense-codes-code-system.json ==
+== fsh-generated/resources/CodeSystem-followup-status-code-system.json ==
+== fsh-generated/resources/Encounter-EthEncounterExample.json ==
+== fsh-generated/resources/ImplementationGuide-openhie.fhir.custom.ig.nour.json ==
+== fsh-generated/resources/MedicationDispense-EthMedicationDispenseExample.json ==
+WARNING: MedicationDispense/EthMedicationDispenseExample: MedicationDispense.quantity: UCUM Codes that contain human readable annotations like {tbl} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
+== fsh-generated/resources/Organization-EthOrganizationExample.json ==
+== fsh-generated/resources/Organization-OrganizationExample.json ==
+== fsh-generated/resources/Patient-EthPatientExample.json ==
+== fsh-generated/resources/Patient-PatientExample.json ==
+== fsh-generated/resources/StructureDefinition-arv-dose-end-date.json ==
+== fsh-generated/resources/StructureDefinition-client-key-population-extension.json ==
+== fsh-generated/resources/StructureDefinition-encounter-next-visit.json ==
+== fsh-generated/resources/StructureDefinition-encounter-visit-type.json ==
+== fsh-generated/resources/StructureDefinition-eth-encounter.json ==
+== fsh-generated/resources/StructureDefinition-eth-medication-dispense.json ==
+INFORMATION: StructureDefinition/eth-medication-dispense: StructureDefinition.snapshot.element[59].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+== fsh-generated/resources/StructureDefinition-eth-organization.json ==
+== fsh-generated/resources/StructureDefinition-eth-patient.json ==
+== fsh-generated/resources/StructureDefinition-hiv-patient.json ==
+== fsh-generated/resources/ValueSet-client-key-population-values.json ==
+== fsh-generated/resources/ValueSet-dispense-codes-value-set.json ==
+== fsh-generated/resources/ValueSet-followup-status-value-set.json ==

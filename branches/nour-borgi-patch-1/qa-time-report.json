@@ -1,0 +1,302 @@
+{
+  "date" : "Mon, 04 Dec, 2023 07:51:33 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-custom-fhir-ig.json",
+      "size" : 3065,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 45,
+          "length" : 53
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 45,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 45,
+          "length" : 64
+        },
+        {
+          "activity" : "validate",
+          "start" : 47,
+          "length" : 720
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 109
+        },
+        {
+          "activity" : "generate2",
+          "start" : 50,
+          "length" : 89
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 62,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-client-key-population-code-system.json",
+      "size" : 550,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 14
+        },
+        {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 22
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 45,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 45,
+          "length" : 13
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 331
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 48,
+          "length" : 1
+        },
+        {
+          "activity" : "generateLogicalMaps",
+          "start" : 48,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 16
+        },
+        {
+          "activity" : "generate2",
+          "start" : 50,
+          "length" : 1524
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 62,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-PatientExample.json",
+      "size" : 643,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 13
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 45,
+          "length" : 14
+        },
+        {
+          "activity" : "validate",
+          "start" : 48,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 20
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-client-key-population-extension.json",
+      "size" : 1707,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 16
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 44,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 45,
+          "length" : 13
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 45,
+          "length" : 35
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 45,
+          "length" : 39
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 133
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 48,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 78
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 598
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 59,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 62,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-hiv-patient.json",
+      "size" : 7399,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 30
+        },
+        {
+          "activity" : "loadDepInfo",
+          "start" : 44,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 45,
+          "length" : 29
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 45,
+          "length" : 418
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 45,
+          "length" : 334
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 867
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 48,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 975
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 1435
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 62,
+          "length" : 27
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 66,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 66,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-client-key-population-values.json",
+      "size" : 1116,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 15
+        },
+        {
+          "activity" : "load",
+          "start" : 45,
+          "length" : 15
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 46,
+          "length" : 127
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 147
+        },
+        {
+          "activity" : "generate1",
+          "start" : 49,
+          "length" : 19
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 4337
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 62,
+          "length" : 1
+        }
+      ]
+    }
+  ]
+}

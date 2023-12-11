@@ -1,0 +1,13 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://openhie.org/fhir/custom-fhir-ig/ValueSet/client-key-population-values",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ClientKeyPopulationValues",
+      "title" : "Client Key Population Values",
+      "description" : "Client Key Population Value Set",
+      "systems" : ["http://snomed.info/sct"]
+    }
+  ]
+}

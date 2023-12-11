@@ -1,0 +1,71 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "dispense-codes-value-set",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-dispense-codes-code-system.html\"><code>http://cdr.com/hiv-regimen-codes</code></a></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/874950001\">874950001</a></td><td>Product containing only efavirenz and lamivudine and tenofovir - TDF + 3TC + EFV</td></tr><tr><td><a href=\"http://snomed.info/id/324859007\">324859007</a></td><td>Product containing lamivudine and zidovudine - AZT + 3TC + ATV/r - AZT + 3TC + LPV/r</td></tr><tr><td><a href=\"http://snomed.info/id/776467001\">776467001</a></td><td>AZT + 3TC + NVP - Product containing only lamivudine and nevirapine and zidovudine</td></tr><tr><td><a href=\"http://snomed.info/id/787163007\">787163007</a></td><td>DRV/r + DTG + TDF/3TC - Product containing dolutegravir and lamivudine</td></tr><tr><td><a href=\"http://snomed.info/id/413381000\">413381000</a></td><td>Product containing abacavir and lamivudine - ABC + 3TC + LPV/r - ABC + 3TC + EFV - ABC + 3TC + NVP</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://openhie.org/fhir/custom-fhir-ig/ValueSet/dispense-codes-value-set",
+  "version" : "1.0.0",
+  "name" : "DispenseCodesValueSet",
+  "title" : "ARV Drugs Dispense Codes Value Set",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-12-11T09:01:08+00:00",
+  "publisher" : "Jembi Health Systems",
+  "contact" : [{
+    "name" : "Jembi Health Systems",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.jembi.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info.jembi.org"
+    }]
+  },
+  {
+    "name" : "Nour Borgi",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "nour@symbionix.co",
+      "use" : "work"
+    }]
+  }],
+  "description" : "ARV Drugs dispense code Value Set",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://cdr.com/hiv-regimen-codes"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "874950001",
+        "display" : "Product containing only efavirenz and lamivudine and tenofovir - TDF + 3TC + EFV"
+      },
+      {
+        "code" : "324859007",
+        "display" : "Product containing lamivudine and zidovudine - AZT + 3TC + ATV/r - AZT + 3TC + LPV/r"
+      },
+      {
+        "code" : "776467001",
+        "display" : "AZT + 3TC + NVP - Product containing only lamivudine and nevirapine and zidovudine"
+      },
+      {
+        "code" : "787163007",
+        "display" : "DRV/r + DTG + TDF/3TC - Product containing dolutegravir and lamivudine"
+      },
+      {
+        "code" : "413381000",
+        "display" : "Product containing abacavir and lamivudine - ABC + 3TC + LPV/r - ABC + 3TC + EFV - ABC + 3TC + NVP"
+      }]
+    }]
+  }
+}

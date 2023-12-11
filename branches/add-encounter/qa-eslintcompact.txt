@@ -1,0 +1,11 @@
+﻿/github/workspace/fsh-generated/resources/StructureDefinition-encounter-next-visit.json: line 0, col 0, Error - Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-encounter-next-visit.json - the canonical URL (http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/encounter-next-visit) does not match the URL (http://cdr.aacahb.gov.et/next-visit) (INVALID)
+/github/workspace/fsh-generated/resources/StructureDefinition-encounter-next-visit.json: line 0, col 0, Error - URL Mismatch http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/encounter-next-visit vs http://cdr.aacahb.gov.et/next-visit (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-encounter-visit-type.json: line 0, col 0, Error - Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-encounter-visit-type.json - the canonical URL (http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/encounter-visit-type) does not match the URL (http://cdr.aacahb.gov.et/visit-type) (INVALID)
+/github/workspace/fsh-generated/resources/StructureDefinition-encounter-visit-type.json: line 0, col 0, Error - URL Mismatch http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/encounter-visit-type vs http://cdr.aacahb.gov.et/visit-type (BUSINESSRULE)
+
+CustomFHIRIG : Validation Results
+=========================================
+
+err = 4, warn = 0, info = 0
+IG Publisher Version: 1.5.5
+Generated Thu Dec 07 09:50:24 UTC 2023. FHIR version 4.0.1 for openhie.fhir.custom.ig.nour#1.0.0 (canonical = http://openhie.org/fhir/custom-fhir-ig)

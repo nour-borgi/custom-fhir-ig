@@ -1,0 +1,15 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-openhie.fhir.custom.ig.nour.json	5339	-	0	0	0	0	0	0	5	69	0	0	0	0	0	0	0	1	0	0	122	86	0	0	0	3	0	1
+fsh-generated/resources/Bundle-ExampleBundle.json	2823	10	0	0	0	1	13	0	0	250	0	0	0	0	0	0	0	0	0	0	19	21	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-client-key-population-code-system.json	544	11	0	0	1	0	0	0	1	14	0	0	0	0	0	0	0	0	0	0	13	1641	0	0	0	0	0	0
+fsh-generated/resources/Encounter-EthEncounterExample.json	1051	14	0	0	0	0	0	0	0	222	0	0	0	0	0	0	0	0	0	0	13	16	0	0	0	0	0	0
+fsh-generated/resources/Organization-EthOrganizationExample.json	600	11	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	9	9	0	0	0	0	0	0
+fsh-generated/resources/Organization-OrganizationExample.json	435	9	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	8	7	0	0	0	0	0	0
+fsh-generated/resources/Patient-PatientExample.json	1979	9	1	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	17	11	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-client-key-population-extension.json	1689	8	0	0	0	0	0	16	0	42	0	0	0	0	0	0	0	0	0	0	79	469	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-encounter-next-visit.json	1405	8	0	0	0	0	0	19	0	20	0	0	0	0	0	0	0	0	0	0	71	165	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-encounter-visit-type.json	1393	8	0	0	0	0	0	17	0	19	0	0	0	0	0	0	0	0	0	0	70	148	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-eth-encounter.json	3928	10	0	0	0	0	0	193	0	156	0	0	1	0	0	0	0	2	0	0	504	1130	0	0	0	12	0	1
+fsh-generated/resources/StructureDefinition-eth-organization.json	3039	10	0	0	0	0	0	122	0	129	0	0	0	0	0	0	0	0	0	0	363	570	0	0	0	10	0	1
+fsh-generated/resources/StructureDefinition-hiv-patient.json	7387	16	0	0	0	0	0	257	0	249	0	0	0	0	0	0	0	2	0	0	728	1072	0	0	0	19	0	1
+fsh-generated/resources/ValueSet-client-key-population-values.json	1110	7	0	0	0	0	0	0	1	165	0	0	0	0	0	0	0	0	0	0	16	4125	0	0	0	1	0	0

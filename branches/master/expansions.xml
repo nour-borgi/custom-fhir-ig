@@ -1,0 +1,1202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="9b107a93-c26d-4d89-8dfa-becef08041e6"/>
+  <meta>
+    <lastUpdated value="2023-12-11T09:01:08.651+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://openhie.org/fhir/custom-fhir-ig/ValueSet/client-key-population-values"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-client-key-population-code-system.html">codesystem Client Key Population CodeSystem v1.0.0 (CodeSystem)</a>
+                </li>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+              </ul>
+            </div>
+            <p>This value set contains 7 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-472986005"> </a>  
+                  <a href="http://snomed.info/id/472986005">472986005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Sexually active with men</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-159799000"> </a>  
+                  <a href="http://snomed.info/id/159799000">159799000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Female prostitute</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-159800001"> </a>  
+                  <a href="http://snomed.info/id/159800001">159800001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Male prostitute</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-228388006"> </a>  
+                  <a href="http://snomed.info/id/228388006">228388006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Intravenous drug user</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-417284009"> </a>  
+                  <a href="http://snomed.info/id/417284009">417284009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Current drug user</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-407375002"> </a>  
+                  <a href="http://snomed.info/id/407375002">407375002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Surgically transgendered transsexual</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-custom-fhir-ig-CodeSystem-client-key-population-code-system-General-Population"> </a>  
+                  <a href="CodeSystem-client-key-population-code-system.html#client-key-population-code-system-General-Population">General-Population</a>
+                </td>
+                <td>http://openhie.org/fhir/custom-fhir-ig/CodeSystem/client-key-population-code-system</td>
+                <td>General Population</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://openhie.org/fhir/custom-fhir-ig/ValueSet/client-key-population-values"/>
+        <version value="1.0.0"/>
+        <name value="ClientKeyPopulationValues"/>
+        <title value="Client Key Population Values"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-12-11T09:01:08+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:0a839581-4099-419a-9684-36e5884dc9b9"/>
+          <timestamp value="2023-12-11T09:01:29+00:00"/>
+          <total value="7"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://openhie.org/fhir/custom-fhir-ig/CodeSystem/client-key-population-code-system|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="472986005"/>
+            <display value="Sexually active with men"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="159799000"/>
+            <display value="Female prostitute"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="159800001"/>
+            <display value="Male prostitute"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="228388006"/>
+            <display value="Intravenous drug user"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="417284009"/>
+            <display value="Current drug user"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="407375002"/>
+            <display value="Surgically transgendered transsexual"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/custom-fhir-ig/CodeSystem/client-key-population-code-system"/>
+            <code value="General-Population"/>
+            <display value="General Population"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://openhie.org/fhir/custom-fhir-ig/ValueSet/dispense-codes-value-set"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-dispense-codes-code-system.html">codesystem ARV Drugs Dispense Codes Code System v1.0.0 (CodeSystem)</a>
+                </li>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+              </ul>
+            </div>
+            <p>This value set contains 61 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-1a"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-1a">1a</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>1a</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-1b"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-1b">1b</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>1b</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-1c"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-1c">1c</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>AZT + 3TC + NVP - Product containing only lamivudine and nevirapine and zidovudine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-1d"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-1d">1d</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>AZT + 3TC + EFV</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-1e"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-1e">1e</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>Product containing only efavirenz and lamivudine and tenofovir - TDF + 3TC + EFV</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-1f"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-1f">1f</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>TDF + 3TC + NVP</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-1g"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-1g">1g</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>ABC + 3TC + EFV - Product containing abacavir and lamivudine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-1h"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-1h">1h</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>ABC + 3TC + NVP - Product containing abacavir and lamivudine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-1j"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-1j">1j</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>TDF + 3TC + DTG</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-1k"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-1k">1k</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>AZT + 3TC + DTG</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-1a-30"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-1a-30">1a-30</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>1a-30</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-1a-40"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-1a-40">1a-40</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>1a-40</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-1b-30"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-1b-30">1b-30</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>1b-30</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-1b-40"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-1b-40">1b-40</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>1b-40</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-2a"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-2a">2a</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>2a</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-2b"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-2b">2b</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>2b</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-2c"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-2c">2c</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>2c</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-2d"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-2d">2d</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>2d</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-2e"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-2e">2e</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>AZT + 3TC + LPV/r - Product containing lamivudine and zidovudine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-2f"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-2f">2f</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>AZT + 3TC + ATV/r - Product containing lamivudine and zidovudine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-2g"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-2g">2g</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>TDF + 3TC+ LPV/r</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-2h"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-2h">2h</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>TDF + 3TC + ATV/r</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-2i"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-2i">2i</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>ABC + 3TC + LPV/r - Product containing abacavir and lamivudine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-3a"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-3a">3a</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>DRV/r + DTG + AZT/3TC</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-3b"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-3b">3b</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>DRV/r + DTG + TDF/3TC - Product containing dolutegravir and lamivudine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-3d"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-3d">3d</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>DRV/r + ABC + EFV + 3TC</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-4a"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-4a">4a</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>4a</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-4b"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-4b">4b</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>4b</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-4c"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-4c">4c</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>AZT + 3TC + NVP</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-4d"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-4d">4d</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>AZT + 3TC + EFV</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-4e"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-4e">4e</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>TDF + 3TC + EFV</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-4f"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-4f">4f</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>AZT + 3TC + LPV/r</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-4g"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-4g">4g</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>ABC + 3TC + LPV/r</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-4j"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-4j">4j</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>ABC + 3TC + DTG</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-4i"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-4i">4i</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>TDF + 3TC + DTG</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-4k"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-4k">4k</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>AZT + 3TC + DTG</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-5a"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-5a">5a</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>5a</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-5b"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-5b">5b</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>5b</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-5c"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-5c">5c</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>5c</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-5d"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-5d">5d</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>5d</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-5e"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-5e">5e</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>ABC + 3TC + LPV/r</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-5f"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-5f">5f</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>AZT + 3TC + LPV/r</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-5g"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-5g">5g</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>TDF + 3TC + EFV</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-5h"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-5h">5h</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>ABC + 3TC + EFV</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-5i"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-5i">5i</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>TDF + 3TC + LPV/r</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-5j"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-5j">5j</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>other</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-5k"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-5k">5k</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>RAL + AZT + 3TC</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-5m"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-5m">5m</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>ABC + 3TC + DTG</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-5n"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-5n">5n</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>ABC + 3TC + LPV/r</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-6f"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-6f">6f</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>DRV/r + DTG + ABC + 3TC</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-other-adult-1"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-other-adult-1">other-adult-1</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>Other Adult first line regimen</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-other-adult-2"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-other-adult-2">other-adult-2</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>Other Adult second line regimen</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-other-adult-3"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-other-adult-3">other-adult-3</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>Other Adult third line regimen</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-other-children-1"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-other-children-1">other-children-1</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>Other Children first line regimen</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-other-children-2"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-other-children-2">other-children-2</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>Other Children second line regimen</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-hiv-regimen-codes-other-children-3"> </a>  
+                  <a href="CodeSystem-dispense-codes-code-system.html#dispense-codes-code-system-other-children-3">other-children-3</a>
+                </td>
+                <td>http://cdr.com/hiv-regimen-codes</td>
+                <td>Other Children third line regimen</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-874950001"> </a>  
+                  <a href="http://snomed.info/id/874950001">874950001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Product containing only efavirenz and lamivudine and tenofovir - TDF + 3TC + EFV</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-324859007"> </a>  
+                  <a href="http://snomed.info/id/324859007">324859007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Product containing lamivudine and zidovudine - AZT + 3TC + ATV/r - AZT + 3TC + LPV/r</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-776467001"> </a>  
+                  <a href="http://snomed.info/id/776467001">776467001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>AZT + 3TC + NVP - Product containing only lamivudine and nevirapine and zidovudine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-787163007"> </a>  
+                  <a href="http://snomed.info/id/787163007">787163007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>DRV/r + DTG + TDF/3TC - Product containing dolutegravir and lamivudine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-413381000"> </a>  
+                  <a href="http://snomed.info/id/413381000">413381000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Product containing abacavir and lamivudine - ABC + 3TC + LPV/r - ABC + 3TC + EFV - ABC + 3TC + NVP</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://openhie.org/fhir/custom-fhir-ig/ValueSet/dispense-codes-value-set"/>
+        <version value="1.0.0"/>
+        <name value="DispenseCodesValueSet"/>
+        <title value="ARV Drugs Dispense Codes Value Set"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-12-11T09:01:08+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:ba7a3ded-7401-4d72-986b-dc3eecd416aa"/>
+          <timestamp value="2023-12-11T09:01:29+00:00"/>
+          <total value="61"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://cdr.com/hiv-regimen-codes|1.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="1a"/>
+            <display value="1a"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="1b"/>
+            <display value="1b"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="1c"/>
+            <display value="AZT + 3TC + NVP - Product containing only lamivudine and nevirapine and zidovudine"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="1d"/>
+            <display value="AZT + 3TC + EFV"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="1e"/>
+            <display value="Product containing only efavirenz and lamivudine and tenofovir - TDF + 3TC + EFV"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="1f"/>
+            <display value="TDF + 3TC + NVP"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="1g"/>
+            <display value="ABC + 3TC + EFV - Product containing abacavir and lamivudine"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="1h"/>
+            <display value="ABC + 3TC + NVP - Product containing abacavir and lamivudine"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="1j"/>
+            <display value="TDF + 3TC + DTG"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="1k"/>
+            <display value="AZT + 3TC + DTG"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="1a-30"/>
+            <display value="1a-30"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="1a-40"/>
+            <display value="1a-40"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="1b-30"/>
+            <display value="1b-30"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="1b-40"/>
+            <display value="1b-40"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="2a"/>
+            <display value="2a"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="2b"/>
+            <display value="2b"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="2c"/>
+            <display value="2c"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="2d"/>
+            <display value="2d"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="2e"/>
+            <display value="AZT + 3TC + LPV/r - Product containing lamivudine and zidovudine"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="2f"/>
+            <display value="AZT + 3TC + ATV/r - Product containing lamivudine and zidovudine"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="2g"/>
+            <display value="TDF + 3TC+ LPV/r"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="2h"/>
+            <display value="TDF + 3TC + ATV/r"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="2i"/>
+            <display value="ABC + 3TC + LPV/r - Product containing abacavir and lamivudine"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="3a"/>
+            <display value="DRV/r + DTG + AZT/3TC"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="3b"/>
+            <display value="DRV/r + DTG + TDF/3TC - Product containing dolutegravir and lamivudine"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="3d"/>
+            <display value="DRV/r + ABC + EFV + 3TC"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="4a"/>
+            <display value="4a"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="4b"/>
+            <display value="4b"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="4c"/>
+            <display value="AZT + 3TC + NVP"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="4d"/>
+            <display value="AZT + 3TC + EFV"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="4e"/>
+            <display value="TDF + 3TC + EFV"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="4f"/>
+            <display value="AZT + 3TC + LPV/r"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="4g"/>
+            <display value="ABC + 3TC + LPV/r"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="4j"/>
+            <display value="ABC + 3TC + DTG"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="4i"/>
+            <display value="TDF + 3TC + DTG"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="4k"/>
+            <display value="AZT + 3TC + DTG"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="5a"/>
+            <display value="5a"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="5b"/>
+            <display value="5b"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="5c"/>
+            <display value="5c"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="5d"/>
+            <display value="5d"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="5e"/>
+            <display value="ABC + 3TC + LPV/r"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="5f"/>
+            <display value="AZT + 3TC + LPV/r"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="5g"/>
+            <display value="TDF + 3TC + EFV"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="5h"/>
+            <display value="ABC + 3TC + EFV"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="5i"/>
+            <display value="TDF + 3TC + LPV/r"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="5j"/>
+            <display value="other"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="5k"/>
+            <display value="RAL + AZT + 3TC"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="5m"/>
+            <display value="ABC + 3TC + DTG"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="5n"/>
+            <display value="ABC + 3TC + LPV/r"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="6f"/>
+            <display value="DRV/r + DTG + ABC + 3TC"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="other-adult-1"/>
+            <display value="Other Adult first line regimen"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="other-adult-2"/>
+            <display value="Other Adult second line regimen"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="other-adult-3"/>
+            <display value="Other Adult third line regimen"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="other-children-1"/>
+            <display value="Other Children first line regimen"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="other-children-2"/>
+            <display value="Other Children second line regimen"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/hiv-regimen-codes"/>
+            <code value="other-children-3"/>
+            <display value="Other Children third line regimen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="874950001"/>
+            <display value="Product containing only efavirenz and lamivudine and tenofovir - TDF + 3TC + EFV"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="324859007"/>
+            <display value="Product containing lamivudine and zidovudine - AZT + 3TC + ATV/r - AZT + 3TC + LPV/r"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="776467001"/>
+            <display value="AZT + 3TC + NVP - Product containing only lamivudine and nevirapine and zidovudine"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="787163007"/>
+            <display value="DRV/r + DTG + TDF/3TC - Product containing dolutegravir and lamivudine"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="413381000"/>
+            <display value="Product containing abacavir and lamivudine - ABC + 3TC + LPV/r - ABC + 3TC + EFV - ABC + 3TC + NVP"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://openhie.org/fhir/custom-fhir-ig/ValueSet/followup-status-value-set"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-followup-status-code-system.html">codesystem Follow Up Status Code System v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 7 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-medication-dispense-status-reason-alive-on-art"> </a>  
+                  <a href="CodeSystem-followup-status-code-system.html#followup-status-code-system-alive-on-art">alive-on-art</a>
+                </td>
+                <td>http://cdr.com/medication-dispense/status-reason</td>
+                <td>Alive on ART</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-medication-dispense-status-reason-to"> </a>  
+                  <a href="CodeSystem-followup-status-code-system.html#followup-status-code-system-to">to</a>
+                </td>
+                <td>http://cdr.com/medication-dispense/status-reason</td>
+                <td>TO</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-medication-dispense-status-reason-dead"> </a>  
+                  <a href="CodeSystem-followup-status-code-system.html#followup-status-code-system-dead">dead</a>
+                </td>
+                <td>http://cdr.com/medication-dispense/status-reason</td>
+                <td>Dead</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-medication-dispense-status-reason-drop"> </a>  
+                  <a href="CodeSystem-followup-status-code-system.html#followup-status-code-system-drop">drop</a>
+                </td>
+                <td>http://cdr.com/medication-dispense/status-reason</td>
+                <td>Drop</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-medication-dispense-status-reason-restart"> </a>  
+                  <a href="CodeSystem-followup-status-code-system.html#followup-status-code-system-restart">restart</a>
+                </td>
+                <td>http://cdr.com/medication-dispense/status-reason</td>
+                <td>Restart</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-medication-dispense-status-reason-lost"> </a>  
+                  <a href="CodeSystem-followup-status-code-system.html#followup-status-code-system-lost">lost</a>
+                </td>
+                <td>http://cdr.com/medication-dispense/status-reason</td>
+                <td>Lost</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---cdr.com-medication-dispense-status-reason-stop"> </a>  
+                  <a href="CodeSystem-followup-status-code-system.html#followup-status-code-system-stop">stop</a>
+                </td>
+                <td>http://cdr.com/medication-dispense/status-reason</td>
+                <td>Stop</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://openhie.org/fhir/custom-fhir-ig/ValueSet/followup-status-value-set"/>
+        <version value="1.0.0"/>
+        <name value="FollowUpStatusValueSet"/>
+        <title value="Follow Up Status Value Set"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-12-11T09:01:08+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:acbcc1f6-5482-4e79-a21b-a116f8891f1c"/>
+          <timestamp value="2023-12-11T09:01:29+00:00"/>
+          <total value="7"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://cdr.com/medication-dispense/status-reason|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://cdr.com/medication-dispense/status-reason"/>
+            <code value="alive-on-art"/>
+            <display value="Alive on ART"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/medication-dispense/status-reason"/>
+            <code value="to"/>
+            <display value="TO"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/medication-dispense/status-reason"/>
+            <code value="dead"/>
+            <display value="Dead"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/medication-dispense/status-reason"/>
+            <code value="drop"/>
+            <display value="Drop"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/medication-dispense/status-reason"/>
+            <code value="restart"/>
+            <display value="Restart"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/medication-dispense/status-reason"/>
+            <code value="lost"/>
+            <display value="Lost"/>
+          </contains>
+          <contains>
+            <system value="http://cdr.com/medication-dispense/status-reason"/>
+            <code value="stop"/>
+            <display value="Stop"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

@@ -1,0 +1,27 @@
+{
+  "resourceType" : "Organization",
+  "id" : "EthOrganizationExample",
+  "meta" : {
+    "profile" : ["http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/eth-organization"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"EthOrganizationExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;EthOrganizationExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eth-organization.html\">EthOrganizationProfile</a></p></div><p><b>identifier</b>: id:\u00a0MOHID001, id:\u00a0HFUID001</p><p><b>active</b>: true</p><p><b>name</b>: Meshwalkiya Health Center</p><p><b>address</b>: Meshulekia Kirkos Addis Ababa </p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://cdr.com/MOHId",
+    "value" : "MOHID001"
+  },
+  {
+    "system" : "http://cdr.com/HFUID",
+    "value" : "HFUID001"
+  }],
+  "active" : true,
+  "name" : "Meshwalkiya Health Center",
+  "address" : [{
+    "line" : ["Meshulekia"],
+    "city" : "Kirkos",
+    "district" : "Kirkos woreda 9",
+    "state" : "Addis Ababa"
+  }]
+}

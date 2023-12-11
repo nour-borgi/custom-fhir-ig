@@ -1,0 +1,73 @@
+{
+  "resourceType" : "Patient",
+  "id" : "PatientExample",
+  "meta" : {
+    "profile" : ["http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/hiv-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Holland Michael Smith </b> male, DoB: 2022-07-07 ( Patient folder Number:\u00a0MR001)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td colspan=\"3\"><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">A current marriage contract is active</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Id:</td><td colspan=\"3\">id:\u00a0NID001</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: 555-555-5555(HOME)</li><li><a href=\"mailto:john.anyperson@example.com\">john.anyperson@example.com</a></li><li>123 Main St Anytown State 12345 US </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>Managing Organization: <a href=\"Organization-OrganizationExample.html\">Organization/OrganizationExample</a> &quot;Facility&quot;</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"This is an extension of the Client Key Population Extension\"><a href=\"StructureDefinition-client-key-population-extension.html\">ClientKeyPopulationExtension:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://snomed.info/sct 417284009}\">Current drug user</span></li></ul></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/client-key-population-extension",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "417284009",
+        "display" : "Current drug user"
+      }],
+      "text" : "Current drug user"
+    }
+  }],
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "MR",
+        "display" : "Medical Record Number"
+      }],
+      "text" : "Patient folder Number"
+    },
+    "system" : "http://openhie.org/fhir/training-solution-1/identifier/mr",
+    "value" : "MR001"
+  },
+  {
+    "system" : "http://openhie.org/fhir/training-solution-1/identifier/nid",
+    "value" : "NID001"
+  }],
+  "name" : [{
+    "family" : "Smith",
+    "given" : ["Holland",
+    "Michael"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "555-555-5555",
+    "use" : "home"
+  },
+  {
+    "system" : "email",
+    "value" : "john.anyperson@example.com"
+  }],
+  "gender" : "male",
+  "birthDate" : "2022-07-07",
+  "address" : [{
+    "line" : ["123 Main St"],
+    "city" : "Anytown",
+    "district" : "District",
+    "state" : "State",
+    "postalCode" : "12345",
+    "country" : "US"
+  }],
+  "maritalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "code" : "M",
+      "display" : "Married"
+    }],
+    "text" : "A current marriage contract is active"
+  },
+  "managingOrganization" : {
+    "reference" : "Organization/OrganizationExample"
+  }
+}

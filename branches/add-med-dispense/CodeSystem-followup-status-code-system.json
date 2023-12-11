@@ -1,0 +1,74 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "followup-status-code-system",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://cdr.com/medication-dispense/status-reason</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">alive-on-art<a name=\"followup-status-code-system-alive-on-art\"> </a></td><td>Alive on ART</td></tr><tr><td style=\"white-space:nowrap\">to<a name=\"followup-status-code-system-to\"> </a></td><td>TO</td></tr><tr><td style=\"white-space:nowrap\">dead<a name=\"followup-status-code-system-dead\"> </a></td><td>Dead</td></tr><tr><td style=\"white-space:nowrap\">drop<a name=\"followup-status-code-system-drop\"> </a></td><td>Drop</td></tr><tr><td style=\"white-space:nowrap\">restart<a name=\"followup-status-code-system-restart\"> </a></td><td>Restart</td></tr><tr><td style=\"white-space:nowrap\">lost<a name=\"followup-status-code-system-lost\"> </a></td><td>Lost</td></tr><tr><td style=\"white-space:nowrap\">stop<a name=\"followup-status-code-system-stop\"> </a></td><td>Stop</td></tr></table></div>"
+  },
+  "url" : "http://cdr.com/medication-dispense/status-reason",
+  "version" : "1.0.0",
+  "name" : "FollowUpStatusCodeSystem",
+  "title" : "Follow Up Status Code System",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-12-11T10:47:10+00:00",
+  "publisher" : "Jembi Health Systems",
+  "contact" : [{
+    "name" : "Jembi Health Systems",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.jembi.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info.jembi.org"
+    }]
+  },
+  {
+    "name" : "Nour Borgi",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "nour@symbionix.co",
+      "use" : "work"
+    }]
+  }],
+  "description" : "A list of codes describing the follow up statuses",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 7,
+  "concept" : [{
+    "code" : "alive-on-art",
+    "display" : "Alive on ART"
+  },
+  {
+    "code" : "to",
+    "display" : "TO"
+  },
+  {
+    "code" : "dead",
+    "display" : "Dead"
+  },
+  {
+    "code" : "drop",
+    "display" : "Drop"
+  },
+  {
+    "code" : "restart",
+    "display" : "Restart"
+  },
+  {
+    "code" : "lost",
+    "display" : "Lost"
+  },
+  {
+    "code" : "stop",
+    "display" : "Stop"
+  }]
+}

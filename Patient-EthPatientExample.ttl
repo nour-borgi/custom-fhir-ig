@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/custom-fhir-ig/Patient/EthPatientExample> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EthPatientExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/eth-patient"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/eth-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Anonymous Patient</b> female, DoB: 2000-11-11 ( Medical record number: MRN1234567)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Ids:</td><td colspan=\"3\"><ul><li>id: NID1234567</li><li>id: UAN1234567</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail:</td><td colspan=\"3\">123 Tesfaye Street Bole Addis Ababa Addis Ababa </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>Managing Organization: <a href=\"Organization-EthOrganizationExample.html\">Organization/EthOrganizationExample</a> &quot;Meshwalkiya Health Center&quot;</li></ul></td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MR" ] ;
+         fhir:display [ fhir:v "Medical record number" ]
+       ] ) ;
+       fhir:text [ fhir:v "Medical record number" ]
+     ] ;
+     fhir:system [ fhir:v "http://cdr.com/MRN"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "MRN1234567" ]
+  ] [
+     fhir:system [ fhir:v "http://cdr.com/SmartCareID"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "NID1234567" ]
+  ] [
+     fhir:system [ fhir:v "http://cdr.com/UAN"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "UAN1234567" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "2000-11-11"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "123" ] [ fhir:v "Tesfaye Street" ] [ fhir:v "Bole" ] ) ;
+     fhir:city [ fhir:v "Addis Ababa" ] ;
+     fhir:district [ fhir:v "Addis Ababa Central District" ] ;
+     fhir:state [ fhir:v "Addis Ababa" ]
+  ] ) ; # 
+  fhir:managingOrganization [
+     fhir:link <http://openhie.org/fhir/custom-fhir-ig/Organization/EthOrganizationExample> ;
+     fhir:reference [ fhir:v "Organization/EthOrganizationExample" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,4 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://openhie.org/fhir/custom-fhir-ig/ValueSet/client-key-population-values,1.0.0,active,,ClientKeyPopulationValues,Client Key Population Values,"Client Key Population Value Set","StructureDefinition/client-key-population-extension","SCT,Internal"
+http://openhie.org/fhir/custom-fhir-ig/ValueSet/dispense-codes-value-set,1.0.0,active,,DispenseCodesValueSet,ARV Drugs Dispense Codes Value Set,"ARV Drugs dispense code Value Set","StructureDefinition/eth-medication-dispense","SCT,Internal"
+http://openhie.org/fhir/custom-fhir-ig/ValueSet/followup-status-value-set,1.0.0,active,,FollowUpStatusValueSet,Follow Up Status Value Set,"FollowUp Status Value Set","StructureDefinition/eth-medication-dispense","Internal"

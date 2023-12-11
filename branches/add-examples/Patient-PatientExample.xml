@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="PatientExample"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/hiv-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Holland Michael Smith </b> male, DoB: 2022-07-07 ( Patient folder Number: MR001)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Known Marital status of Patient">Marital Status:</td><td colspan="3"><span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">A current marriage contract is active</span></td></tr><tr><td style="background-color: #f3f5da" title="Other Ids (see the one above)">Other Id:</td><td colspan="3">id: NID001</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Details:</td><td colspan="3"><ul><li>ph: 555-555-5555(HOME)</li><li><a href="mailto:john.anyperson@example.com">john.anyperson@example.com</a></li><li>123 Main St Anytown State 12345 US </li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Patient Links">Links:</td><td colspan="3"><ul><li>Managing Organization: <a href="Organization-OrganizationExample.html">Organization/OrganizationExample</a> &quot;Facility&quot;</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="This is an extension of the Client Key Population Extension"><a href="StructureDefinition-client-key-population-extension.html">ClientKeyPopulationExtension:</a></td><td colspan="3"><ul><li><span title="Codes: {http://snomed.info/sct 417284009}">Current drug user</span></li></ul></td></tr></table></div>
+  </text>
+  <extension url="http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/client-key-population-extension">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="417284009"/>
+        <display value="Current drug user"/>
+      </coding>
+      <text value="Current drug user"/>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="MR"/>
+        <display value="Medical Record Number"/>
+      </coding>
+      <text value="Patient folder Number"/>
+    </type>
+    <system value="http://openhie.org/fhir/training-solution-1/identifier/mr"/>
+    <value value="MR001"/>
+  </identifier>
+  <identifier>
+    <system value="http://openhie.org/fhir/training-solution-1/identifier/nid"/>
+    <value value="NID001"/>
+  </identifier>
+  <name>
+    <family value="Smith"/>
+    <given value="Holland"/>
+    <given value="Michael"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="555-555-5555"/>
+    <use value="home"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="john.anyperson@example.com"/>
+  </telecom>
+  <gender value="male"/>
+  <birthDate value="2022-07-07"/>
+  <address>
+    <line value="123 Main St"/>
+    <city value="Anytown"/>
+    <district value="District"/>
+    <state value="State"/>
+    <postalCode value="12345"/>
+    <country value="US"/>
+  </address>
+  <maritalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+      <code value="M"/>
+      <display value="Married"/>
+    </coding>
+    <text value="A current marriage contract is active"/>
+  </maritalStatus>
+  <managingOrganization>
+    <reference value="Organization/OrganizationExample"/>
+  </managingOrganization>
+</Patient>

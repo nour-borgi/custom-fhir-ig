@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/custom-fhir-ig/Encounter/EthEncounterExample> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EthEncounterExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/eth-encounter"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/eth-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"EthEncounterExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;EthEncounterExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eth-encounter.html\">Encounter Profile</a></p></div><p><b>Encounter Next Visit Extension</b>: 2013-01-15</p><p><b>Encounter Visit Type Extension</b>: Unscheduled</p><p><b>identifier</b>: id: 001</p><p><b>status</b>: finished</p><p><b>class</b>: observation encounter (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code OBSENC = 'observation encounter', stated as 'observation encounter')</p><p><b>type</b>: Follow-up encounter <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#390906007)</span></p><p><b>subject</b>: <a href=\"Patient-PatientExample.html\">Patient/PatientExample</a> &quot; SMITH&quot;</p><p><b>period</b>: 2012-12-09 --&gt; 2012-12-09</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://cdr.com/next-visit"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2013-01-15"^^xsd:date ]
+  ] [
+     fhir:url [ fhir:v "http://cdr.com/visit-type"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Unscheduled" ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://cdr.com/Encounter"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "001" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "OBSENC" ] ;
+     fhir:display [ fhir:v "observation encounter" ]
+  ] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       a sct:390906007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "390906007" ] ;
+       fhir:display [ fhir:v "Follow-up encounter" ]
+     ] ) ;
+     fhir:text [ fhir:v "Follow-up encounter" ]
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://openhie.org/fhir/custom-fhir-ig/Patient/PatientExample> ;
+     fhir:reference [ fhir:v "Patient/PatientExample" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2012-12-09"^^xsd:date ] ;
+     fhir:end [ fhir:v "2012-12-09"^^xsd:date ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

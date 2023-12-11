@@ -1,0 +1,43 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://openhie.org/fhir/custom-fhir-ig/ValueSet/client-key-population-values",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ClientKeyPopulationValues",
+      "title" : "Client Key Population Values",
+      "description" : "Client Key Population Value Set",
+      "systems" : [
+        "http://openhie.org/fhir/custom-fhir-ig/CodeSystem/client-key-population-code-system",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-client-key-population-extension.html" : "ClientKeyPopulationExtension"
+    },
+    {
+      "url" : "http://openhie.org/fhir/custom-fhir-ig/ValueSet/dispense-codes-value-set",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "DispenseCodesValueSet",
+      "title" : "ARV Drugs Dispense Codes Value Set",
+      "description" : "ARV Drugs dispense code Value Set",
+      "systems" : ["http://cdr.com/hiv-regimen-codes", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-eth-medication-dispense.html" : "Medication Dispense Profile"
+    },
+    {
+      "url" : "http://openhie.org/fhir/custom-fhir-ig/ValueSet/followup-status-value-set",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "FollowUpStatusValueSet",
+      "title" : "Follow Up Status Value Set",
+      "description" : "FollowUp Status Value Set",
+      "systems" : ["http://cdr.com/medication-dispense/status-reason"],
+      "uses" : {
+      },
+      "StructureDefinition-eth-medication-dispense.html" : "Medication Dispense Profile"
+    }
+  ]
+}

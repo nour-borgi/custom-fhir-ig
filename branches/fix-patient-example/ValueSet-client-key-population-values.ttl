@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://github.com/nour-borgi/custom-fhir-ig/ValueSet/client-key-population-values> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "client-key-population-values"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/472986005\">472986005</a></td><td>Sexually active with men</td></tr><tr><td><a href=\"http://snomed.info/id/159799000\">159799000</a></td><td>Female prostitute</td></tr><tr><td><a href=\"http://snomed.info/id/159800001\">159800001</a></td><td>Male prostitute</td></tr><tr><td><a href=\"http://snomed.info/id/228388006\">228388006</a></td><td>Intravenous drug user</td></tr><tr><td><a href=\"http://snomed.info/id/417284009\">417284009</a></td><td>Current drug user</td></tr><tr><td><a href=\"http://snomed.info/id/407375002\">407375002</a></td><td>Surgically transgendered transsexual</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://github.com/nour-borgi/custom-fhir-ig/ValueSet/client-key-population-values"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "ClientKeyPopulationValues"] ; # 
+  fhir:title [ fhir:v "Client Key Population Values"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-01T15:56:33+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Jembi Health Systems"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Jembi Health Systems" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.jembi.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info.jembi.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Nour Borgi" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "nour@symbionix.co" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Client Key Population Value Set"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "472986005" ] ;
+         fhir:display [ fhir:v "Sexually active with men" ]
+       ] [
+         fhir:code [ fhir:v "159799000" ] ;
+         fhir:display [ fhir:v "Female prostitute" ]
+       ] [
+         fhir:code [ fhir:v "159800001" ] ;
+         fhir:display [ fhir:v "Male prostitute" ]
+       ] [
+         fhir:code [ fhir:v "228388006" ] ;
+         fhir:display [ fhir:v "Intravenous drug user" ]
+       ] [
+         fhir:code [ fhir:v "417284009" ] ;
+         fhir:display [ fhir:v "Current drug user" ]
+       ] [
+         fhir:code [ fhir:v "407375002" ] ;
+         fhir:display [ fhir:v "Surgically transgendered transsexual" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

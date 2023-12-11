@@ -1,0 +1,9 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-openhie.fhir.custom.ig.nour.json	3604	-	0	0	0	0	0	0	5	132	0	0	0	0	0	0	0	0	0	0	85	70	0	0	0	2	0	7
+fsh-generated/resources/Bundle-ExampleBundle.json	2823	16	0	0	0	0	20	0	0	321	0	0	0	0	0	0	0	0	0	0	26	24	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-client-key-population-code-system.json	544	10	0	0	0	0	0	0	0	15	0	0	1	0	0	0	0	0	0	0	17	1909	0	0	0	1	0	0
+fsh-generated/resources/Organization-OrganizationExample.json	435	9	0	0	0	0	0	0	0	14	0	0	0	0	0	0	0	1	0	0	7	14	0	0	0	0	0	0
+fsh-generated/resources/Patient-PatientExample.json	1979	21	0	0	0	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	12	15	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-client-key-population-extension.json	1689	14	1	0	0	0	0	29	1	56	0	0	0	0	0	0	0	0	0	0	58	656	0	0	0	3	0	0
+fsh-generated/resources/StructureDefinition-hiv-patient.json	7387	29	0	0	0	0	0	431	0	533	0	0	0	0	0	0	0	1	0	0	697	2147	0	0	0	31	1	2
+fsh-generated/resources/ValueSet-client-key-population-values.json	1110	18	0	0	0	0	0	0	0	209	0	0	0	0	0	0	0	0	0	0	13	5243	0	0	0	1	0	0

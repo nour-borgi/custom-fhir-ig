@@ -1,0 +1,23 @@
+{
+  "resourceType" : "Organization",
+  "id" : "OrganizationExample",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"OrganizationExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;OrganizationExample&quot; </p></div><p><b>active</b>: true</p><p><b>name</b>: Facility</p><p><b>address</b>: 150 Second Street Cambridge MA 02141 USA </p><h3>Contacts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Telecom</b></td></tr><tr><td style=\"display: none\">*</td><td>ph: 617-418-2200</td></tr></table></div>"
+  },
+  "active" : true,
+  "name" : "Facility",
+  "address" : [{
+    "line" : ["150 Second Street"],
+    "city" : "Cambridge",
+    "state" : "MA",
+    "postalCode" : "02141",
+    "country" : "USA"
+  }],
+  "contact" : [{
+    "telecom" : [{
+      "system" : "phone",
+      "value" : "617-418-2200"
+    }]
+  }]
+}

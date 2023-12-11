@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="followup-status-code-system"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>http://cdr.com/medication-dispense/status-reason</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">alive-on-art<a name="followup-status-code-system-alive-on-art"> </a></td><td>Alive on ART</td></tr><tr><td style="white-space:nowrap">to<a name="followup-status-code-system-to"> </a></td><td>TO</td></tr><tr><td style="white-space:nowrap">dead<a name="followup-status-code-system-dead"> </a></td><td>Dead</td></tr><tr><td style="white-space:nowrap">drop<a name="followup-status-code-system-drop"> </a></td><td>Drop</td></tr><tr><td style="white-space:nowrap">restart<a name="followup-status-code-system-restart"> </a></td><td>Restart</td></tr><tr><td style="white-space:nowrap">lost<a name="followup-status-code-system-lost"> </a></td><td>Lost</td></tr><tr><td style="white-space:nowrap">stop<a name="followup-status-code-system-stop"> </a></td><td>Stop</td></tr></table></div>
+  </text>
+  <url value="http://cdr.com/medication-dispense/status-reason"/>
+  <version value="1.0.0"/>
+  <name value="FollowUpStatusCodeSystem"/>
+  <title value="Follow Up Status Code System"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-12-11T09:01:08+00:00"/>
+  <publisher value="Jembi Health Systems"/>
+  <contact>
+    <name value="Jembi Health Systems"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.jembi.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info.jembi.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nour Borgi"/>
+    <telecom>
+      <system value="email"/>
+      <value value="nour@symbionix.co"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="A list of codes describing the follow up statuses"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="alive-on-art"/>
+    <display value="Alive on ART"/>
+  </concept>
+  <concept>
+    <code value="to"/>
+    <display value="TO"/>
+  </concept>
+  <concept>
+    <code value="dead"/>
+    <display value="Dead"/>
+  </concept>
+  <concept>
+    <code value="drop"/>
+    <display value="Drop"/>
+  </concept>
+  <concept>
+    <code value="restart"/>
+    <display value="Restart"/>
+  </concept>
+  <concept>
+    <code value="lost"/>
+    <display value="Lost"/>
+  </concept>
+  <concept>
+    <code value="stop"/>
+    <display value="Stop"/>
+  </concept>
+</CodeSystem>

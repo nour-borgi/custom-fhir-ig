@@ -1,0 +1,23 @@
+﻿CustomFHIRIG : Validation Results
+=========================================
+
+err = 0, warn = 2, info = 0
+IG Publisher Version: 1.5.5
+Generated Mon Dec 04 08:24:10 UTC 2023. FHIR version 4.0.1 for openhie.fhir.custom.ig.nour#1.0.0 (canonical = http://openhie.org/fhir/custom-fhir-ig)
+ Build Errors : 0 / 0 / 0
+ /github/workspace/fsh-generated/resources/CodeSystem-client-key-population-code-system : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-openhie.fhir.custom.ig.nour : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-PatientExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-client-key-population-extension : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-client-key-population-values : 0 / 0 / 1
+</table>
+== n/a ==
+== fsh-generated/resources/CodeSystem-client-key-population-code-system.json ==
+== fsh-generated/resources/ImplementationGuide-openhie.fhir.custom.ig.nour.json ==
+== fsh-generated/resources/Patient-PatientExample.json ==
+== fsh-generated/resources/StructureDefinition-client-key-population-extension.json ==
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/client-key-population-extension'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-hiv-patient.json ==
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/custom-fhir-ig/StructureDefinition/hiv-patient'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/ValueSet-client-key-population-values.json ==
