@@ -34,6 +34,32 @@ Description: "Example of Patient"
 * extension[KPS].valueCodeableConcept.coding.display = "Current drug user"
 * extension[KPS].valueCodeableConcept.text = "Current drug user"
 
+Instance: EthPatientExample
+InstanceOf: EthPatient
+Usage: #example
+Title: "Eth Patient Example"
+Description: "Eth Patient Example"
+
+* identifier[MRN].value = "MRN1234567"
+* identifier[MRN].system = $MRN
+* identifier[MRN].type.coding.code = #MR
+* identifier[MRN].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier[MRN].type.coding.display = "Medical record number"
+* identifier[MRN].type.text = "Medical record number"
+* identifier[UAN].value = "UAN1234567"
+* identifier[UAN].system = $UAN
+* identifier[SmartCareID].value = "NID1234567"
+* identifier[SmartCareID].system = $SmartCareID
+* gender = #female
+* birthDate = "2000-11-11"
+* address.city = "Addis Ababa"
+* address.line[0] = "123"
+* address.line[1] = "Tesfaye Street"
+* address.line[2] = "Bole"
+* address.district = "Addis Ababa Central District"
+* address.state = "Addis Ababa"
+* managingOrganization = Reference(EthOrganizationExample)
+
 Instance: OrganizationExample
 InstanceOf: Organization
 Description: "Example for Organization"

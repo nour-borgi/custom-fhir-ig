@@ -66,6 +66,44 @@ Description: "This is an extension of the Client Key Population Extension"
 * ^context[0].type = #element
 * ^context[0].expression = "Patient"
 
+Profile: EthPatient
+Parent: Patient
+Id: eth-patient
+Title: "Eth Patient"
+Description: "A patient profile to record details for the Eth Patient"
+* identifier 1..*
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier ^slicing.ordered = false
+* identifier ^slicing.description = "Slice based on the type of identifier."
+* identifier contains
+    MRN 1..1 and
+    UAN 0..1 MS and
+    SmartCareID 1..1 
+* identifier[MRN].value 1..1
+* identifier[MRN].system = $MRN (exactly)
+* identifier[MRN].type.coding.code = #MR
+* identifier[MRN].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier[MRN].type.coding.display = "Medical record number"
+* identifier[MRN].type.text = "Medical record number"
+* identifier[UAN] ^definition =
+    "reason(s) why this should be supported."
+* identifier[UAN].value 1..1
+* identifier[UAN].system = $UAN (exactly)
+* identifier[SmartCareID].value 1..1
+* identifier[SmartCareID].system = $SmartCareID (exactly)
+* gender 1..1
+* birthDate 1..1
+* address 0..* MS
+* address ^definition =
+    "reason(s) why this should be supported."
+* address.city 0..1
+* address.line 0..*
+* address.district 0..1
+* address.state 0..1
+* managingOrganization 1..1
+
 Profile: EthEncounterProfile
 Parent: Encounter
 Id: eth-encounter
